@@ -1,0 +1,803 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{mathpazo}
+\usepackage[mathpazo]{flexisym}
+\usepackage{breqn}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "breaklines=true,captionpos=b,frame=tb,showlines=true"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+CS392 A1 Nikita Volodin 127196
+\end_layout
+
+\begin_layout Subsection*
+Question 1 (Sect1.2 - Q4)
+\end_layout
+
+\begin_layout Subsubsection*
+Part A
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \frac{4}{5}+\frac{1}{3}=\frac{17}{15}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \frac{4}{5}+\frac{1}{3}}=0.800\cdot10^{0}+0.333\cdot10^{0}=1.133\cdot10^{0}=0.113\cdot10^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \frac{4}{5}+\frac{1}{3}}=0.800\cdot10^{0}+0.333\cdot10^{0}=1.133\cdot10^{0}=0.113\cdot10^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relative error in parts 2 and 3:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}={\displaystyle \left|\frac{{\displaystyle \frac{17}{15}}-0.113\cdot10^{1}}{{\displaystyle \frac{17}{15}}}\right|}=0.294\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}={\displaystyle \left|\frac{{\displaystyle \frac{17}{15}}-0.113\cdot10^{1}}{{\displaystyle \frac{17}{15}}}\right|}=0.294\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Part B
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \frac{4}{5}\cdot\frac{1}{3}=\frac{4}{15}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \frac{4}{5}\cdot\frac{1}{3}}=0.800\cdot10^{0}\cdot0.333\cdot10^{0}=0.266\cdot10^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \frac{4}{5}\cdot\frac{1}{3}}=0.800\cdot10^{0}\cdot0.333\cdot10^{0}=0.267\cdot10^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relative error in parts 2 and 3:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}={\displaystyle \left|\frac{{\displaystyle \frac{4}{15}-0.266\cdot10^{0}}}{{\displaystyle \frac{4}{15}}}\right|}=0.250\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}={\displaystyle \left|\frac{{\displaystyle \frac{4}{15}-0.267\cdot10^{0}}}{{\displaystyle \frac{4}{15}}}\right|}=0.125\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Part C
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \left(\frac{1}{3}-\frac{3}{11}\right)+\frac{3}{20}=\frac{2}{33}+\frac{3}{20}=\frac{139}{660}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \left(\frac{1}{3}-\frac{3}{11}\right)+\frac{3}{20}}=\left(0.333\cdot10^{0}-0.272\cdot10^{0}\right)+0.150\cdot10^{0}=0.610\cdot10^{-1}+0.150\cdot10^{0}=0.211\cdot10^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \left(\frac{1}{3}-\frac{3}{11}\right)+\frac{3}{20}}=\left(0.333\cdot10^{0}-0.273\cdot10^{0}\right)+0.150\cdot10^{0}=0.600\cdot10^{-1}+0.150\cdot10^{0}=0.210\cdot10^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relative error in parts 2 and 3:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}=\left|{\displaystyle \frac{{\displaystyle \frac{139}{660}}-0.211\cdot10^{0}}{{\displaystyle \frac{139}{660}}}}\right|=0.187\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}=\left|{\displaystyle \frac{{\displaystyle \frac{139}{660}}-0.210\cdot10^{0}}{{\displaystyle \frac{139}{660}}}}\right|=0.288\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Part D
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \left(\frac{1}{3}+\frac{3}{11}\right)-\frac{3}{20}=\frac{20}{33}-\frac{3}{20}=\frac{301}{660}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \left(\frac{1}{3}+\frac{3}{11}\right)-\frac{3}{20}}=\left(0.333\cdot10^{0}+0.272\cdot10^{0}\right)-0.150\cdot10^{0}=0.605\cdot10^{0}-0.150\cdot10^{0}=0.455\cdot10^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \left(\frac{1}{3}+\frac{3}{11}\right)-\frac{3}{20}}=\left(0.333\cdot10^{0}+0.273\cdot10^{0}\right)-0.150\cdot10^{0}=0.606\cdot10^{0}-0.150\cdot10^{0}=0.456\cdot10^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relative error in parts 2 and 3:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}=\left|{\displaystyle \frac{{\displaystyle \frac{301}{660}}-0.455\cdot10^{0}}{{\displaystyle \frac{301}{660}}}}\right|=0.233\cdot10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{Relative error}=\left|{\displaystyle \frac{{\displaystyle \frac{301}{660}}-0.456\cdot10^{0}}{{\displaystyle \frac{301}{660}}}}\right|=0.133\cdot10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Question 2 (Sect1.2 - Q22)
+\end_layout
+
+\begin_layout Standard
+The formula for volume is 
+\begin_inset Formula $V=lwh$
+\end_inset
+
+ and formula for surface area is 
+\begin_inset Formula $A=2(lw+wh+lh)$
+\end_inset
+
+.
+ Since length were estimated to the closest centimetre, we can define bounds
+ for lengths of all sides.
+ If 
+\begin_inset Formula $l$
+\end_inset
+
+ is measured to be 
+\begin_inset Formula $3cm$
+\end_inset
+
+, 
+\begin_inset Formula $w$
+\end_inset
+
+ measured as 
+\begin_inset Formula $4cm$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+ is measured as 
+\begin_inset Formula $5cm$
+\end_inset
+
+, then the bounds for actual dimensions are: 
+\begin_inset Formula $2.5\le l<3.5$
+\end_inset
+
+, 
+\begin_inset Formula $3.5\le w<4.5$
+\end_inset
+
+, 
+\begin_inset Formula $4.5\le h<5.5$
+\end_inset
+
+.
+ So, by substitution lower and upper bounds into the formulas for volume
+ and surface area, we will find lower and upper bounds for those values.
+ 
+\end_layout
+
+\begin_layout Standard
+For volume, we have lower bound: 
+\begin_inset Formula $2.5\cdot3.5\cdot4.5=39.375$
+\end_inset
+
+ and upper bound: 
+\begin_inset Formula $3.5\cdot4.5\cdot5.5=86.625$
+\end_inset
+
+, so 
+\begin_inset Formula $39.375\le V<86.625$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For surface area, lower bound is 
+\begin_inset Formula $2(2.5\cdot3.5+3.5\cdot4.5+2.5\cdot4.5)=71.5$
+\end_inset
+
+ and upper bound is 
+\begin_inset Formula $2(3.5\cdot4.5+4.5\cdot5.5+3.5\cdot5.5)=119.5$
+\end_inset
+
+, so 
+\begin_inset Formula $71.5\le A<119.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Answer: 
+\begin_inset Formula $39.375\le V<86.625$
+\end_inset
+
+ and 
+\begin_inset Formula $71.5\le A<119.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 3 (Sect1.3 - Q7)
+\end_layout
+
+\begin_layout Subsubsection*
+Part B --- 
+\begin_inset Formula ${\displaystyle \lim_{h\rightarrow0}\frac{1-\cos h}{h}=0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recall, that 
+\begin_inset Formula 
+\[
+\cos h={\displaystyle 1-\frac{h^{2}}{2!}+\frac{h^{4}}{4!}-\frac{h^{6}}{6!}+\dots}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula 
+\[
+{\displaystyle \frac{1-\cos h}{h}=\frac{\frac{h^{2}}{2!}-\frac{h^{4}}{4!}+\frac{h^{6}}{6!}-\dots}{h}=\frac{h}{2!}-\frac{h^{3}}{4!}+\frac{h^{5}}{6!}-\dots}
+\]
+
+\end_inset
+
+So following the definition 1.19, 
+\begin_inset Formula 
+\[
+\left|F(h)-L\right|=\left|\frac{h}{2!}-\frac{h^{3}}{4!}+\frac{h^{5}}{6!}-\dots\right|=\left|h\right|\left|\frac{1}{2!}-\frac{h^{2}}{4!}+\frac{h^{4}}{6!}-\dots\right|\le\left|h\right|
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\left|{\displaystyle \frac{1}{2!}}-{\displaystyle \frac{h^{2}}{4!}}+{\displaystyle \frac{h^{4}}{6!}}-\dots\right|\le1$
+\end_inset
+
+, we can see that 
+\begin_inset Formula $K=1$
+\end_inset
+
+ and 
+\begin_inset Formula $G(h)=h$
+\end_inset
+
+, and according to definition 1.19, 
+\begin_inset Formula $F(h)$
+\end_inset
+
+ has the rate of 
+\begin_inset Formula $\mathcal{O}(G(h))=\mathcal{O}(n)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsubsection*
+Part D --- 
+\begin_inset Formula ${\displaystyle \lim_{h\rightarrow0}\frac{1-e^{h}}{h}=-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly to part B, 
+\begin_inset Formula 
+\[
+e^{h}=1+h+{\displaystyle \frac{h^{2}}{2}}+{\displaystyle \frac{h^{3}}{3}}+\dots
+\]
+
+\end_inset
+
+so
+\begin_inset Formula 
+\[
+{\displaystyle \frac{1-e^{h}}{h}=\frac{1-1-h-{\displaystyle \frac{h^{2}}{2}}-{\displaystyle \frac{h^{3}}{3}}-\dots}{h}}=-1-{\displaystyle \frac{h}{2}}-{\displaystyle \frac{h^{2}}{3}}-{\displaystyle \frac{h^{3}}{4}}-\dots
+\]
+
+\end_inset
+
+According to definition 1.19, 
+\begin_inset Formula $F(h)={\displaystyle \frac{1-e^{h}}{h}}$
+\end_inset
+
+, 
+\begin_inset Formula $L=-1$
+\end_inset
+
+.
+ So, the left side of inequality to be satisfied is
+\begin_inset Formula 
+\[
+\left|F(h)-L\right|=\left|-1-{\displaystyle \frac{h}{2}}-{\displaystyle \frac{h^{2}}{3}}-{\displaystyle \frac{h^{3}}{4}}-\dots-\left(-1\right)\right|=\left|-1-{\displaystyle \frac{h}{2}}-{\displaystyle \frac{h^{2}}{3}}-{\displaystyle \frac{h^{3}}{4}}-\dots+1\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|-{\displaystyle \frac{h}{2}}-{\displaystyle \frac{h^{2}}{3}}-{\displaystyle \frac{h^{3}}{4}}-\dots\right|=\left|{\displaystyle \frac{h}{2}}+{\displaystyle \frac{h^{2}}{3}}+{\displaystyle \frac{h^{3}}{4}}+\dots\right|=\left|h\right|\left|{\displaystyle \frac{1}{2}}+{\displaystyle \frac{h}{3}}+{\displaystyle \frac{h^{2}}{4}}+\dots\right|\le\left|h\right|
+\]
+
+\end_inset
+
+ Since 
+\begin_inset Formula $\left|{\displaystyle \frac{1}{2}}+{\displaystyle \frac{h}{3}}+{\displaystyle \frac{h^{2}}{4}}+\dots\right|\le1$
+\end_inset
+
+, we can see that 
+\begin_inset Formula $K=1$
+\end_inset
+
+ and 
+\begin_inset Formula $G(h)=h$
+\end_inset
+
+, and according to definition 1.19, 
+\begin_inset Formula $F(h)$
+\end_inset
+
+ has the rate of 
+\begin_inset Formula $\mathcal{O}(G(h))=\mathcal{O}(n)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsection*
+Source code for the Bisection function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/Bisection.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 4 (Sect2.1 - Q5b)
+\end_layout
+
+\begin_layout Subsubsection*
+Source code of the program in question 5b:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.1-Q5b.js"
+lstparams "caption={Question 5 Program code}"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output of the program in question 5b:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.1-Q5b_output.txt"
+lstparams "caption={Question 5 program output}"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 5 (Sect2.1 - Q12)
+\end_layout
+
+\begin_layout Subsubsection*
+Source code of the program in question 12:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.1-Q12.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output of the program in question 12:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.1-Q12_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 6 (Sect2.1 - Q14)
+\end_layout
+
+\begin_layout Standard
+From theorem 2.1, we have formula which approximates the error.
+ However, if we know error, we can determine number of steps required to
+ get the value to that error.
+ So, by theorem, 
+\begin_inset Formula 
+\[
+\left|p_{n}-p\right|\le{\displaystyle \frac{b-a}{2^{n}}}<E
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $E=10^{-3}$
+\end_inset
+
+ is error, 
+\begin_inset Formula $n$
+\end_inset
+
+ is a number of steps required for algorithm, and 
+\begin_inset Formula $a=1$
+\end_inset
+
+ and 
+\begin_inset Formula $b=4$
+\end_inset
+
+.
+ From this equation, we can get 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+2^{-n}\left(4-1\right)<10^{-3}\iff2^{-n}<{\displaystyle \frac{10^{-3}}{3}}\iff-n\ln2<-3\ln10-\ln3\iff n>3\frac{\ln10}{\ln2}+\frac{\ln3}{\ln2}\approx11.55
+\]
+
+\end_inset
+
+So, with 
+\begin_inset Formula $n=12$
+\end_inset
+
+ it is enough to approximate to 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Source code of the program in question 14:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.1-Q14.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output of the program in question 14:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.1-Q14_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
