@@ -4,7 +4,7 @@
  * @param {Number} tol - tolerance (precision) of the answer
  * @param {Number} steps - maximum number of iterations
  *
- * @return {[Number, Number]} array with 2 numbers. First is a solution x of the
+ * @return {[Number, Number]|Error} array with 2 numbers. First is a solution x of the
  * function f(x) = x near initial approximation appr with  precision tol and
  * second is an amount of iterations required to get the answer.
  */
