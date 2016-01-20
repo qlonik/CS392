@@ -1,7 +1,7 @@
 /**
- * Function which solves the equation f(x) = 0 on interval [a, b] and returns
- * the solution and the amount of steps required to find the solution with
- * specified tolerance.
+ * Function which approximates the equation f(x) = 0 on interval [a, b] and
+ * returns found approximation and the amount of steps required to find the
+ * approximation with specified tolerance.
  *
  * @param {Function} f - function for approximation
  * @param {Number} a - lower bound for the solution
