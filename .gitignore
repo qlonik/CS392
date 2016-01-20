@@ -1,0 +1,7 @@
+*.pdf
+
+node_modules/
+
+*~
+.idea/
+*.iml

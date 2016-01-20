@@ -1,0 +1,12 @@
+{
+  "name": "cs392",
+  "version": "1.0.0",
+  "description": "CS392 homework",
+  "main": "index.js",
+  "dependencies": {
+    "nerdamer": "^0.5.7"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "MIT"
+}
