@@ -1,12 +1,15 @@
 /**
+ * Function which approximates the equation f(x) = x near the initial
+ * approximation and returns found approximation and the amount of steps
+ * required to find the approximation with specified tolerance.
+ *
  * @param {Function} f - function for approximation
  * @param {Number} appr - initial approximation
  * @param {Number} tol - tolerance (precision) of the answer
  * @param {Number} steps - maximum number of iterations
  *
- * @return {[Number, Number]|Error} array with 2 numbers. First is a solution x
- * of the function f(x) = x near initial approximation appr with  precision tol
- * and second is an amount of iterations required to get the answer.
+ * @return {[Number, Number]|Error} Array with 2 numbers - solution x and amount
+ * of steps.
  */
 function FixedPoint(f, appr, tol, steps) {
   let i = 1;
