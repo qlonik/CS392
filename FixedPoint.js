@@ -9,18 +9,18 @@
  * second is an amount of iterations required to get the answer.
  */
 function FixedPoint(f, appr, tol, steps) {
-   let i = 1;
+  let i = 1;
 
-   while (i <= steps) {
-      const p = f(appr);
+  while (i <= steps) {
+    const p = f(appr);
 
-      if (Math.abs(p - appr) < tol) return [p, i];
+    if (Math.abs(p - appr) < tol) return [p, i];
 
-      appr = p;
-      i++;
-   }
+    appr = p;
+    i++;
+  }
 
-   return new Error(`Method failed after ${i - 1} iterations`);
+  return new Error(`Method failed after ${i - 1} iterations`);
 }
 
 module.exports = FixedPoint;
