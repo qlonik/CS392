@@ -506,6 +506,39 @@ filename "S2.3-Q6f_output.txt"
 \end_layout
 
 \begin_layout Subsection*
+Source code for the Secant function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/Secant.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Question 5 (Sect2.3 - Q8f):
 \end_layout
 
