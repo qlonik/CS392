@@ -1,13 +1,16 @@
 /**
+ * Function which solves the equation f(x) = 0 on interval [a, b] and returns
+ * the solution and the amount of steps required to find the solution with
+ * specified tolerance.
+ *
  * @param {Function} f - function for approximation
  * @param {Number} a - lower bound for the solution
  * @param {Number} b - upper bound for the solution
  * @param {Number} tol - tolerance (precision) of the answer
  * @param {Number} steps - maximum number of iterations
  *
- * @return {[Number, Number]|Error} array with 2 numbers. First is a solution x
- * of the function f(x) = 0 on interval [a, b] with precision tol and second is
- * an amount of iterations required to get the answer.
+ * @return {[Number, Number]|Error} array with 2 numbers - solution x and amount
+ * of steps.
  */
 function Bisection(f, a, b, tol, steps) {
   let i = 1;
