@@ -259,7 +259,159 @@ Interval and amount of iterations
 \end_layout
 
 \begin_layout Standard
-dfsdf
+Following the theorem 2.4, take 
+\begin_inset Formula $g=\cos(x)$
+\end_inset
+
+.
+ In this case for all 
+\begin_inset Formula $x\in\left[0;1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $g(x)\in\left[0;1\right]$
+\end_inset
+
+ as well.
+ The function 
+\begin_inset Formula $g^{\prime}=-\sin(x)$
+\end_inset
+
+ is defined on 
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+ and we can find constant 
+\begin_inset Formula $k$
+\end_inset
+
+ so that 
+\begin_inset Formula $\left|g^{\prime}(x)\right|\le k$
+\end_inset
+
+, for all 
+\begin_inset Formula $x\in(0,1)$
+\end_inset
+
+.
+ In particular, if we take k to be in the interval 
+\begin_inset Formula $\left(\sin(1);1\right)$
+\end_inset
+
+, then our second condition will be satisfied and the theorem 2.4 is satisfied.
+ Since all conditions of theorem 2.4 are true, the series will converge to
+ the unique fixed point 
+\begin_inset Formula $p$
+\end_inset
+
+ in 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, according to corollary 2.5, the bounds for the error are given by system
+ of inequalities:
+\begin_inset Formula 
+\[
+\begin{cases}
+\left|p_{n}-p\right|\le k^{n}\max\left\{ p_{0}-a,b-p_{0}\right\} \text{,}\\
+\left|p_{n}-p\right|\le{\displaystyle \frac{k^{n}}{1-k}}\left|p_{1}-p_{0}\right|\text{.}
+\end{cases}
+\]
+
+\end_inset
+
+Since we know our bound for error, number 
+\begin_inset Formula $k$
+\end_inset
+
+, we can find 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+, then we can estimate number 
+\begin_inset Formula $n$
+\end_inset
+
+ which signifies amount of steps performed for approximation.
+ Take 
+\begin_inset Formula $k=0.85$
+\end_inset
+
+, 
+\begin_inset Formula $p_{0}=0.5$
+\end_inset
+
+, 
+\begin_inset Formula $p_{1}=g\left(p_{0}\right)\approx0.87758$
+\end_inset
+
+, and 
+\begin_inset Formula $Err=10^{-5}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{cases}
+k^{n}\max\left\{ p_{0}-a,b-p_{0}\right\} <Err\text{,}\\
+{\displaystyle \frac{k^{n}}{1-k}\left|p_{1}-p_{0}\right|<Err}\text{;}
+\end{cases}\begin{cases}
+0.85^{n}\max\left\{ 0.5-0,1-0.87758\right\} <10^{-5}\text{,}\\
+{\displaystyle \frac{0.85^{n}}{1-0.85}}\left|0.87758-0.5\right|<10^{-5}\text{;}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+0.85^{n}\cdot0.5<10^{-5}\text{,}\\
+0.85^{n}\cdot{\displaystyle \frac{0.37758}{0.15}}<10^{-5}\text{;}
+\end{cases}\begin{cases}
+n\cdot\ln(0.85)<\ln\left(2\cdot10^{-5}\right)\text{,}\\
+n\cdot\ln(0.85)<\ln\left({\displaystyle \frac{0.15\cdot10^{-5}}{0.37758}}\right)\text{;}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+n<{\displaystyle \frac{\ln\left(2\cdot10^{-5}\right)}{\ln(0.85)}}\text{,}\\
+n<{\displaystyle \frac{\ln\left({\displaystyle \frac{0.15\cdot10^{-5}}{0.37758}}\right)}{\ln(0.85)}}\text{;}
+\end{cases}\begin{cases}
+n<66.575496\text{,}\\
+n<76.520764\text{.}
+\end{cases}
+\]
+
+\end_inset
+
+So, we should get the approximation up to magnitude 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+ at maximum in 
+\begin_inset Formula $77$
+\end_inset
+
+ steps.
+\end_layout
+
+\begin_layout Standard
+In reality, when code is run, we get approximation in 28 steps.
 \end_layout
 
 \begin_layout Subsubsection*
