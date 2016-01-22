@@ -408,7 +408,7 @@ So, we should get the approximation up to magnitude
 \end_inset
 
  steps.
- In reality, when code is run, we get approximation in 28 steps.
+ In reality, when the code is run, we get approximation in 28 steps.
 \end_layout
 
 \begin_layout Subsubsection*
