@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -51,6 +52,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -69,6 +74,355 @@
 \begin_body
 
 \begin_layout Standard
+CS 392 A3 Nikita Volodin 127196
+\end_layout
+
+\begin_layout Subsection*
+Question 1 (Sect2.4 - Q6)
+\end_layout
+
+\begin_layout Standard
+Show that the following sequences converge linearly to 
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+ How large must 
+\begin_inset Formula $n$
+\end_inset
+
+ be before 
+\begin_inset Formula $\left|p_{n}-p\right|\le5\times10^{-2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsubsection*
+Part A - 
+\begin_inset Formula $p_{n}={\displaystyle \frac{1}{n}}\text{, }n\ge1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following the definition 2.7, 
+\begin_inset Formula 
+\[
+{\displaystyle \lim_{n\rightarrow\infty}\frac{\left|p_{n+1}\right|}{\left|p_{n}\right|}}={\displaystyle \lim_{n\rightarrow\infty}\frac{n}{n+1}}={\displaystyle \lim_{n\rightarrow\infty}\frac{1}{1+\frac{1}{n}}}=1\text{.}
+\]
+
+\end_inset
+
+From 
+\begin_inset Formula $p_{n}={\displaystyle \frac{1}{n}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|p_{n}-p\right|\le5\times10^{-2}$
+\end_inset
+
+, we get that 
+\begin_inset Formula ${\displaystyle \frac{1}{n}\le\frac{1}{20}}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\ge20$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Part B - 
+\begin_inset Formula $p_{n}={\displaystyle \frac{1}{n^{2}}}\text{, }n\ge1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following the definition 2.7, 
+\begin_inset Formula 
+\[
+{\displaystyle \lim_{n\rightarrow\infty}\frac{\left|p_{n+1}\right|}{\left|p_{n}\right|}}={\displaystyle \lim_{n\rightarrow\infty}\frac{n^{2}}{(n+1)^{2}}}={\displaystyle \lim_{n\rightarrow\infty}\left(\frac{1}{1+\frac{1}{n}}\right)^{2}}=1\text{.}
+\]
+
+\end_inset
+
+From 
+\begin_inset Formula $p_{n}={\displaystyle \frac{1}{n^{2}}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|p_{n}-p\right|\le5\times10^{-2}$
+\end_inset
+
+, we get that 
+\begin_inset Formula ${\displaystyle \frac{1}{n^{2}}\le\frac{1}{20}}$
+\end_inset
+
+, 
+\begin_inset Formula $n^{2}\ge20$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge\sqrt{20}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\ge5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Question 2 (Sect2.4 - Q8)
+\end_layout
+
+\begin_layout Subsubsection*
+Part A - show 
+\begin_inset Formula $p_{n}=10^{-2^{n}}$
+\end_inset
+
+ converges quadratically to 0
+\end_layout
+
+\begin_layout Standard
+Following the definition 2.7, 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{\left|p_{n+1}\right|}{\left|p_{n}\right|^{2}}=\lim_{n\rightarrow\infty}\frac{10^{-2^{n+1}}}{\left(10^{-2^{n}}\right)^{2}}=\lim_{n\rightarrow\infty}\frac{\left(10^{2^{n}}\right)^{2}}{10^{2^{n+1}}}=\lim_{n\rightarrow\infty}\frac{10^{2\cdot2^{n}}}{10^{2\cdot2^{n}}}=1\text{,}
+\]
+
+\end_inset
+
+so the sequence is convergent
+\end_layout
+
+\begin_layout Subsubsection*
+Part B - show 
+\begin_inset Formula $p_{n}=10^{-n^{k}}$
+\end_inset
+
+ does not converge quadratically to 0
+\end_layout
+
+\begin_layout Standard
+Following the definition 2.7, 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{\left|p_{n+1}\right|}{\left|p_{n}\right|^{2}}=\lim_{n\rightarrow\infty}\frac{10^{-\left(n+1\right)^{k}}}{\left(10^{-n^{k}}\right)^{2}}=\lim_{n\rightarrow\infty}\frac{10^{-\left(n+1\right)^{k}}}{10^{-2\cdot n^{k}}}=\lim_{n\rightarrow\infty}\frac{10^{2\cdot n^{k}}}{10^{\left(n+1\right)^{k}}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{n\rightarrow\infty}10^{2n^{k}-\left(n+1\right)^{k}}=\lim_{n\rightarrow\infty}10^{\left(2-\left(1+\frac{1}{n}\right)^{k}\right)n^{k}}=\infty\text{.}
+\]
+
+\end_inset
+
+So, this sequence does not converge.
+\end_layout
+
+\begin_layout Subsection*
+Question 3 (Sect2.4 - Q11)
+\end_layout
+
+\begin_layout Standard
+Recall from Theorem 2.1 that value produced by Bisection method is approximated
+ at 
+\begin_inset Formula $p=0$
+\end_inset
+
+ by 
+\begin_inset Formula $\left|p_{n}\right|\approx{\displaystyle \frac{b-a}{2^{n}}}$
+\end_inset
+
+.
+ So, following the definition 2.7, 
+\begin_inset Formula ${\displaystyle \lim_{n\rightarrow\infty}\frac{\left|p_{n+1}\right|}{\left|p_{n}\right|}=\lim_{n\rightarrow\infty}\frac{(b-a)/2^{n+1}}{(b-a)/2^{n}}=\lim_{n\rightarrow\infty}\frac{2^{n}}{2^{n+1}}=\lim_{n\rightarrow\infty}\frac{1}{2}=\frac{1}{2}}$
+\end_inset
+
+.
+ So, Bisection method converges.
+\end_layout
+
+\begin_layout Subsection*
+Source code for the Muller's function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/Mullers.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 4 (Sect2.6 - Q3a)
+\end_layout
+
+\begin_layout Subsubsection*
+Source code of the program in question 3a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.6-Q3a.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output of the program in question 3a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.6-Q3a_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 5 (Sect2.6 - Q3d):
+\end_layout
+
+\begin_layout Subsubsection*
+Source code of the program in question 3d:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.6-Q3d.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output of the program in question 3d:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S2.6-Q3d_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
