@@ -286,8 +286,23 @@ filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/Mullers
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Question 4 (Sect2.6 - Q3a)
+\end_layout
+
+\begin_layout Standard
+Two solutions are found using the algorithm.
+ Since this is power 3 equation, there should be third solution.
+ This third solution is a conjugate pair of found complex answer.
+ So, knowing one complex root, we can find another complex root by finding
+ conjugate of the first value.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -356,8 +371,21 @@ filename "S2.6-Q3a_output.txt"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Question 5 (Sect2.6 - Q3d):
+\end_layout
+
+\begin_layout Standard
+This is power 4 equation, so there should be 4 solutions.
+ Three out of 4 were found with the algorithm and forth is a conjugate pair
+ of a complex value.D
 \end_layout
 
 \begin_layout Subsubsection*
