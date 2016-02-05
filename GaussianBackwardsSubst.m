@@ -1,7 +1,7 @@
 GaussianBackwardsSubst::usage =
-    "GaussianBackwardSubst[A] solves system of linear equations with indexes "
-        <> "specified in matrix A. This method assumes that the number of "
-        <> "unknowns is number of columns minus 1.";
+    "GaussianBackwardSubst[A] solves system of linear equations with " <>
+        "indexes specified in matrix A. This method assumes that the " <>
+        "number of unknowns is number of columns minus 1.";
 
 GaussianBackwardsSubst[AImmutable_] := Module[{A, n, i, x},
   A = AImmutable;
