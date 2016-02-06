@@ -21,8 +21,10 @@ GaussianBackwardsSubst[AImmutable_] := Module[{A, n, i, x},
 
   If[A[[n, n]] == 0, Throw["no unique solution exists"]];
   x[[n]] = A[[n, n + 1]] / A[[n, n]];
-  For[i = n - 1, i >= 1, i--, x[[i]] =
-      (A[[i, n + 1]] - Sum[A[[i, j]] * x[[j]], {j, i + 1, n}]) / A[[i, i]]];
+  For[i = n - 1, i >= 1, i--, Module[{sum},
+    sum = Sum[A[[i, j]] * x[[j]], {j, i + 1, n}];
+    x[[i]] = (A[[i, n + 1]] - sum) / A[[i, i]]
+  ]];
 
   Return[x];
 ];
