@@ -27,9 +27,10 @@ GaussianPartialPivoting[AImmutable_] := Module[{A, n, x, NROW, i},
   If[A[[NROW[[n]], n]] == 0, Throw["no unique solution exists"]];
 
   x[[n]] = A[[NROW[[n]], n + 1]] / A[[NROW[[n]], n]];
-  For[i = n - 1, i >= 1, i--, x[[i]] =
-      (A[[NROW[[i]], n + 1]] - Sum[A[[NROW[[i]], j]] * x[[j]], {j, i + 1, n}])
-          / A[[NROW[[i]], i]]];
+  For[i = n - 1, i >= 1, i--, Module[{sum},
+    sum = Sum[A[[NROW[[i]], j]] * x[[j]], {j, i + 1, n}];
+    x[[i]] = (A[[NROW[[i]], n + 1]] - sum) / A[[NROW[[i]], i]]
+  ]];
 
   Return[x];
 ];
