@@ -14,7 +14,7 @@ GaussianPartialPivoting[AImmutable_] := Module[{A, n, x, NROW, i},
     m = Table[0, {i, 1, n}, {j, 1, n + 1}];
     maxNROW = Max[Table[Abs[A[[NROW[[j]], i]]], {j, i, n}]];
 
-    While[p <= n && Abs[A[[NROW[[p]], i]]] != maxNROW, p++]
+    While[p <= n && Abs[A[[NROW[[p]], i]]] != maxNROW, p++];
     If[p > n, Throw["no unique solution exists"]];
     If[A[[NROW[[p]], i]] == 0, Throw["no unique solution exists"]];
     If[NROW[[i]] != NROW[[p]], NROW[[{i, p}]] = NROW[[{p, i}]]];
