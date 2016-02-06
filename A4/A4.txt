@@ -1,0 +1,10 @@
+Import[FileNameJoin[{NotebookDirectory[], "S6.1-Q7a.m"}]]
+{-227.07692,476.92308,-177.69231}
+Import[FileNameJoin[{NotebookDirectory[], "S6.1-Q7c.m"}]]
+{-0.0317,0.5952,-2.3810,2.7778}
+Import[FileNameJoin[{NotebookDirectory[], "S6.2-Q22b.m"}]]
+{1.,0.5,-1.}
+Import[FileNameJoin[{NotebookDirectory[], "S6.2-Q24b.m"}]]
+{1.,0.5,-1.}
+Import[FileNameJoin[{NotebookDirectory[], "S6.2-Q26b.m"}]]
+{1.,0.5,-1.}
