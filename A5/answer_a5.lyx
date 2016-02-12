@@ -81,110 +81,185 @@ CS 392 A4 Nikita Volodin 127196
 \end_layout
 
 \begin_layout Subsection*
-Question 1 (Sect6.1 - Q7)
-\end_layout
-
-\begin_layout Subsubsection*
-Part A
-\end_layout
-
-\begin_layout Subsubsection*
-Source code:
+Question 1 (Sect1.1 - Q6a)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S6.1-Q7a.m"
-
+Given 
+\begin_inset Formula $f(0)=1$
 \end_inset
 
-
-\end_layout
-
+, 
+\begin_inset Formula $f(0.25)=1.64872$
 \end_inset
 
+, 
+\begin_inset Formula $f(0.5)=2.71828$
+\end_inset
 
+, and 
+\begin_inset Formula $f(0.75)=4.48169$
+\end_inset
+
+, find 
+\begin_inset Formula $f(0.43)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
-Output:
+Part 1 - Degree one approximating polynomial
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S6.1-Q7a_output.txt"
+The approximation with degree one polynomial is 
+\begin_inset Formula 
+\[
+P(x)=L_{0}(x)f(x_{0})+L_{1}(x)f(x_{1})=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac{x-x_{0}}{x_{1}-x_{0}}f(x_{1})\text{.}
+\]
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Part C
-\end_layout
-
-\begin_layout Subsubsection*
-Source code:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
+Choose 
+\begin_inset Formula $(x_{0},y_{0})=(0.25,1.64872)$
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S6.1-Q7c.m"
+ and 
+\begin_inset Formula $(x_{1},y_{1})=(0.5,2.71828)$
+\end_inset
+
+.
+ Therefore polynomial approximation is following: 
+\begin_inset Formula 
+\[
+P(x)=\frac{x-0.5}{-0.25}\cdot1.64872+\frac{x-0.25}{0.25}\cdot2.71828\text{.}
+\]
 
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+Hence, 
+\begin_inset Formula 
+\[
+P(0.43)=\frac{0.07}{0.25}\cdot1.64872+\frac{0.18}{0.25}\cdot2.71828=0.4616416+1.9571616=2.4188032\approx2.41880\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part 2 - Degree two approximating polynomial
+\end_layout
+
+\begin_layout Standard
+The approximation is given by 
+\begin_inset Formula 
+\[
+P(x)=f(x_{0})L_{0}(x)+f(x_{1})L_{1}(x)+f(x_{2})L_{2}(x)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=f(x_{0})\frac{(x-x_{1})(x-x_{2})}{(x_{0}-x_{1})(x_{0}-x_{2})}+f(x_{1})\frac{(x-x_{0})(x-x_{2})}{(x_{1}-x_{0})(x_{1}-x_{2})}+f(x_{2})\frac{(x-x_{0})(x-x_{1})}{(x_{2}-x_{0})(x_{2}-x_{1})}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Choose 
+\begin_inset Formula $(x_{0},y_{0})=(0.25,1.64872)$
+\end_inset
+
+, 
+\begin_inset Formula $(x_{1},y_{1})=(0.5,2.71828)$
+\end_inset
+
+, and 
+\begin_inset Formula $(x_{2},y_{2})=(0.75,4.48169)$
+\end_inset
+
+.
+ Therefore, the polynomial approximation is following:
+\begin_inset Formula 
+\[
+P(x)=1.64872\frac{(x-0.5)(x-0.75)}{0.25\cdot0.5}+2.71828\frac{(x-0.25)(x-0.75)}{-0.5\cdot0.25}+4.48169\frac{(x-0.25)(x-0.5)}{0..5\cdot0.25}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hence,
+\begin_inset Formula 
+\[
+P(0.43)=0.328278+1.25258-0.451754=1.12911\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part 3 - Degree three approximating polynomial
+\end_layout
+
+\begin_layout Standard
+The approximation is given by 
+\begin_inset Formula 
+\[
+P(x)=f(x_{0})L_{0}(x)+f(x_{1})L_{1}(x)+f(x_{2})L_{2}(x)+f(x_{3})L_{3}(x)=
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+=f(x_{0})\frac{(x-x_{1})(x-x_{2})(x-x_{3})}{(x_{0}-x_{1})(x_{0}-x_{2})(x_{0}-x_{3})}+f(x_{1})\frac{(x-x_{0})(x-x_{2})(x-x_{3})}{(x_{1}-x_{0})(x_{1}-x_{2})(x_{1}-x_{3})}+
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++f(x_{2})\frac{(x-x_{0})(x-x_{1})(x-x_{3})}{(x_{2}-x_{0})(x_{2}-x_{1})(x_{2}-x_{3})}+f(x_{3})\frac{(x-x_{0})(x-x_{1})(x-x_{2})}{(x_{3}-x_{0})(x_{3}-x_{1})(x_{3}-x_{2})}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, substituting points and 
+\begin_inset Formula $x=0.43$
+\end_inset
+
+, we get:
+\begin_inset Formula 
+\[
+P(0.43)=-0.043008+0.508175+2.15444-0.259006=2.3606
+\]
 
 \end_inset
 
