@@ -1,0 +1,164 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[      5195,        163]
+NotebookOptionsPosition[      4412,        128]
+NotebookOutlinePosition[      4748,        143]
+CellTagsIndexPosition[      4705,        140]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Import", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", " ", 
+     "\"\<S3.2-Q1b.m\>\""}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.665001884584753*^9, 3.665001906774724*^9}, {
+  3.665016063634583*^9, 3.665016070074459*^9}, {3.665016309985236*^9, 
+  3.665016311239532*^9}, {3.665016356583769*^9, 3.665016357137281*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"1st degree: \"\>", "\[InvisibleSpace]", "0.440862795`"}],
+  SequenceForm["1st degree: ", 0.440862795],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.665019147715102*^9, {3.665019194334359*^9, 3.6650192382464*^9}, {
+   3.6650192906935987`*^9, 3.6650192993165216`*^9}, 3.6650193317674303`*^9, 
+   3.6650194738035383`*^9, 3.665019719019429*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"2nd degree: \"\>", "\[InvisibleSpace]", 
+   "0.43841351999999995`"}],
+  SequenceForm["2nd degree: ", 0.43841351999999995`],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.665019147715102*^9, {3.665019194334359*^9, 3.6650192382464*^9}, {
+   3.6650192906935987`*^9, 3.6650192993165216`*^9}, 3.6650193317674303`*^9, 
+   3.6650194738035383`*^9, 3.665019719020866*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"3rd degree: \"\>", "\[InvisibleSpace]", 
+   "0.44198500249999984`"}],
+  SequenceForm["3rd degree: ", 0.44198500249999984`],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.665019147715102*^9, {3.665019194334359*^9, 3.6650192382464*^9}, {
+   3.6650192906935987`*^9, 3.6650192993165216`*^9}, 3.6650193317674303`*^9, 
+   3.6650194738035383`*^9, 3.66501971902145*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Import", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", " ", 
+     "\"\<S3.2-Q18.m\>\""}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6650197339500504`*^9, 3.665019734008114*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"1930: \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    InterpretationBox["\<\"169,649,000\"\>",
+     169649000,
+     Editable->False],
+    NumberForm[#, DigitBlock -> 3]& ]}],
+  SequenceForm["1930: ", 
+   NumberForm[169649000, DigitBlock -> 3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.665020161106525*^9, 3.665020196552099*^9, {3.665073261404147*^9, 
+   3.6650732737282343`*^9}, {3.665073360150783*^9, 3.665073432678155*^9}, {
+   3.665073481436863*^9, 3.665073527653693*^9}, {3.6650736201664143`*^9, 
+   3.665073624941975*^9}, {3.6650736822551107`*^9, 3.665073745188903*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"1965: \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    InterpretationBox["\<\"191,767,000\"\>",
+     191767000,
+     Editable->False],
+    NumberForm[#, DigitBlock -> 3]& ]}],
+  SequenceForm["1965: ", 
+   NumberForm[191767000, DigitBlock -> 3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.665020161106525*^9, 3.665020196552099*^9, {3.665073261404147*^9, 
+   3.6650732737282343`*^9}, {3.665073360150783*^9, 3.665073432678155*^9}, {
+   3.665073481436863*^9, 3.665073527653693*^9}, {3.6650736201664143`*^9, 
+   3.665073624941975*^9}, {3.6650736822551107`*^9, 3.6650737452162447`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"2010: \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    InterpretationBox["\<\"171,351,000\"\>",
+     171351000,
+     Editable->False],
+    NumberForm[#, DigitBlock -> 3]& ]}],
+  SequenceForm["2010: ", 
+   NumberForm[171351000, DigitBlock -> 3]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.665020161106525*^9, 3.665020196552099*^9, {3.665073261404147*^9, 
+   3.6650732737282343`*^9}, {3.665073360150783*^9, 3.665073432678155*^9}, {
+   3.665073481436863*^9, 3.665073527653693*^9}, {3.6650736201664143`*^9, 
+   3.665073624941975*^9}, {3.6650736822551107`*^9, 3.665073745218843*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 882},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"10.3 for Linux x86 (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 427, 9, 32, "Input"],
+Cell[CellGroupData[{
+Cell[874, 28, 398, 8, 23, "Print"],
+Cell[1275, 38, 419, 9, 23, "Print"],
+Cell[1697, 49, 418, 9, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2164, 64, 285, 7, 32, "Input"],
+Cell[CellGroupData[{
+Cell[2474, 75, 634, 15, 23, "Print"],
+Cell[3111, 92, 636, 15, 23, "Print"],
+Cell[3750, 109, 634, 15, 23, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

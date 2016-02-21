@@ -1,0 +1,8 @@
+Import[FileNameJoin[{NotebookDirectory[], "S3.2-Q1b.m"}]]
+1st degree: 0.440863
+2nd degree: 0.438414
+3rd degree: 0.441985
+Import[FileNameJoin[{NotebookDirectory[], "S3.2-Q18.m"}]]
+1930: 169,649,000
+1965: 191,767,000
+2010: 171,351,000
