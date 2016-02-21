@@ -14,5 +14,11 @@ NewtonsDividedDifference[xImmutable_, fxImmutable_] := Module[{n, i, j, xs, F},
     ];
   ];
 
-  Return[Table[ F[i, i], {i, 0, n} ]];
+  Return[Function[{x},
+    F[0, 0] + Sum[
+      F[i, i] * Product[
+        x - xs[j], {j, 0, i - 1}
+      ], {i, 1, n}
+    ]
+  ]];
 ];
