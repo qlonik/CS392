@@ -495,6 +495,76 @@ filename "S3.2-Q1b_output.txt"
 \end_layout
 
 \begin_layout Subsection*
+Question 4 (Sect3.2 - Q18)
+\end_layout
+
+\begin_layout Subsubsection*
+Source code for part A:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S3.2-Q18.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output for part A:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S3.2-Q18_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Question 5 (Sect6.2 - Q19a)
 \end_layout
 
