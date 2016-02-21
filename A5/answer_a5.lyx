@@ -271,191 +271,36 @@ Question 2 (Sect3.1 - Q20)
 \end_layout
 
 \begin_layout Standard
-According to Q26 from Section 1.1, 
-\begin_inset Formula $erf(x)={\displaystyle \frac{2}{\sqrt{\pi}}\sum_{k=0}^{\infty}\frac{(-1)^{k}x^{2k+1}}{(2k+1)k!}}$
+Let 
+\begin_inset Formula $f(x)=e^{x}$
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Subsubsection*
-Part 1
+Part A
 \end_layout
 
 \begin_layout Standard
-The values for 
-\begin_inset Formula $erf(x)$
+Let 
+\begin_inset Formula $x_{0}=0$
 \end_inset
 
- are as follows:
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="7">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $x$
+, and 
+\begin_inset Formula $x_{1}=0.5$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $erf(x)$
+.
+ Then, 
+\begin_inset Formula $f(0)=1$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.2227
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4284
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.6039
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7421
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.8427
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+, and 
+\begin_inset Formula $f(0.5)=1.6487$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Subsubsection*
-Part 2
-\end_layout
-
-\begin_layout Itemize
-Using linear interpolation
-\end_layout
-
-\begin_layout Standard
-Following the linear interpolation formula 
+, then the approximation is given by 
 \begin_inset Formula 
 \[
 P(x)=L_{0}(x)f(x_{0})+L_{1}(x)f(x_{1})=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac{x-x_{0}}{x_{1}-x_{0}}f(x_{1})\text{.}
@@ -467,169 +312,99 @@ P(x)=L_{0}(x)f(x_{0})+L_{1}(x)f(x_{1})=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac
 \end_layout
 
 \begin_layout Standard
-Since we want to approximate 
-\begin_inset Formula $P\left(\frac{1}{3}\right)$
-\end_inset
-
- , then choose 
-\begin_inset Formula $(x_{0},y_{0})=(0.2,0.2227)$
-\end_inset
-
- and 
-\begin_inset Formula $(x_{1},y_{1})=(0.4,0.4284)$
-\end_inset
-
-.
- Therefore, the 
-\begin_inset Formula $P(x)$
-\end_inset
-
- is 
-\begin_inset Formula 
-\[
-P\left(\frac{1}{3}\right)=0+0.371171\approx0.3712
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Using quadratic interpolation
-\end_layout
-
-\begin_layout Standard
-Following quadratic interpolation formula 
-\begin_inset Formula 
-\[
-P(x)=f(x_{0})L_{0}(x)+f(x_{1})L_{1}(x)+f(x_{2})L_{2}(x)=
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-=f(x_{0})\frac{(x-x_{1})(x-x_{2})}{(x_{0}-x_{1})(x_{0}-x_{2})}+f(x_{1})\frac{(x-x_{0})(x-x_{2})}{(x_{1}-x_{0})(x_{1}-x_{2})}+f(x_{2})\frac{(x-x_{0})(x-x_{1})}{(x_{2}-x_{0})(x_{2}-x_{1})}\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Since we want to approximate 
-\begin_inset Formula $P\left(\frac{1}{3}\right)$
-\end_inset
-
-, then choose 
-\begin_inset Formula $(x_{0},y_{0})=(0.2,0.2227)$
+So, for values of 
+\begin_inset Formula $x_{0}$
 \end_inset
 
 , 
-\begin_inset Formula $(x_{1},y_{1})=(0.4,0.4284)$
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x_{0})$
 \end_inset
 
 , and 
-\begin_inset Formula $(x_{2},y_{2})=(0.6,0.6039)$
+\begin_inset Formula $f(x_{1})$
 \end_inset
 
-.
- Therefore, the 
-\begin_inset Formula $P(x)$
-\end_inset
-
- is
+,
 \begin_inset Formula 
 \[
-P\left(\frac{1}{3}\right)=0+0.123724+0.237996=0.361719\approx0.3617
+P(x)=\frac{x-0.5}{-0.5}\cdot1+\frac{x}{0.5}\cdot1.6487\text{.}
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection*
-Question 3 (Sect6.2 - Q11a)
 \end_layout
 
 \begin_layout Standard
-Following the algorithm 6.1 we can conclude this sequence of actions on the
- system of linear equations: 
+Hence, 
 \begin_inset Formula 
 \[
-\systeme{0.03x_{1}+58.9x_{2}=59.2,5.31x_{1}-6.10x_{2}=47.0}
+P(0.25)=0.5+0.82435=1.32435\text{.}
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part B
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{0}=0.5$
+\end_inset
+
+, and 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f(0.5)=1.6487$
+\end_inset
+
+, and 
+\begin_inset Formula $f(1)=2.7183$
+\end_inset
+
+, then the approximation is given by
+\begin_inset Formula 
+\[
+P(x)=L_{0}(x)f(x_{0})+L_{1}(x)f(x_{1})=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac{x-x_{0}}{x_{1}-x_{0}}f(x_{1})\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, for values of 
+\begin_inset Formula $x_{0},$
 \end_inset
 
  
-\begin_inset Formula 
-\[
-\systeme{0.03x_{1}+58.9x_{2}=59.2,{(5.31-\frac{5.31}{0.03}\cdot0.03)}x_{1}+{(-6.10-\frac{5.31}{0.03}\cdot58.9)}x_{2}=47.0-\frac{5.31}{0.03}\cdot59.2}
-\]
-
-\end_inset
-
- 
-\begin_inset Formula 
-\[
-\systeme{0.03x_{1}+58.9x_{2}=59.2,-10400x_{2}=-10500}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-And the step 9 from algorithm 6.1 yield the result for 
 \begin_inset Formula $x_{1}$
 \end_inset
 
- as:
-\begin_inset Formula 
-\[
-x_{1}=\frac{a_{1,3}-{\displaystyle \sum_{j=2}^{2}a_{1,j}\cdot x_{j}}}{a_{11}}=\frac{59.2-58.9\cdot1.01}{0.03}=\frac{-0.30}{0.03}=-10
-\]
-
+, 
+\begin_inset Formula $f(x_{0})$
 \end_inset
 
-and the final result as 
-\begin_inset Formula $\left(x_{1},x_{2}\right)=\left(-10.0,1.01\right)$
+, 
+\begin_inset Formula $f(x_{1})$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Subsection*
-Question 4 (Sect6.2 - Q15a)
-\end_layout
-
-\begin_layout Standard
-Following the algorithm 6.2, we get this sequence of results on initial system:
+,
 \begin_inset Formula 
 \[
-\systeme{0.03x_{1}+58.9x_{2}=59.2,5.31x_{1}-6.10x_{2}=47.0}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\systeme{{\left(0.03-\frac{0.03}{5.31}\cdot5.31\right)}x_{1}+{\left(58.9+\frac{0.03}{5.31}\cdot6.10\right)}x_{2}=59.2-\frac{0.03}{5.31}\cdot47.0,5.31x_{1}-6.10x_{2}=47.0}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\systeme{+58.9x_{2}=58.9,5.31x_{1}-6.10x_{2}=47.0}
+P(x)=\frac{x-1}{-0.5}\cdot1.6487+\frac{x-0.5}{0.5}\cdot2.7183\text{.}
 \]
 
 \end_inset
@@ -638,23 +413,15 @@ Following the algorithm 6.2, we get this sequence of results on initial system:
 \end_layout
 
 \begin_layout Standard
-And the step 11 from algorithm 6.2 yield result for 
-\begin_inset Formula $x_{1}$
-\end_inset
-
- as:
+Hence,
 \begin_inset Formula 
 \[
-x_{1}={\displaystyle \frac{a_{2,3}-{\displaystyle \sum_{j=2}^{2}a_{2,j}\cdot x_{j}}}{a_{2,1}}}=\frac{47.0-(-6.10\cdot1)}{5.31}=10
+P(0.75)=0.82435+1.35915=2.117\text{.}
 \]
 
 \end_inset
 
-and the final result is 
-\begin_inset Formula $\left(x_{1},x_{2}\right)=\left(10.0,1.00\right)$
-\end_inset
 
-.
 \end_layout
 
 \begin_layout Subsection*
