@@ -564,6 +564,22 @@ filename "S3.2-Q18_output.txt"
 
 \end_layout
 
+\begin_layout Subsubsection*
+Part B
+\end_layout
+
+\begin_layout Standard
+Predicted amount of people during 1930 is 169649000, however actual amount
+ is 123203000.
+ The value that we are predicting is outside of the values given, and the
+ closest is 1940, which is 10 years apart.
+ Since the population in 1965 is predicted in between points we already
+ know, the predicted amount could be very close to actual amount.
+ However, the predicted amount in 2010 could not be precise, because the
+ closest point we have is 20 years away, which is more than 1930 was away
+ from 1940, and therefore 2010 would not be very precise estimation.
+\end_layout
+
 \begin_layout Subsection*
 Source code for Newton's Divided-Difference Formula:
 \end_layout
