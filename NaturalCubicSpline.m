@@ -29,9 +29,7 @@ NaturalCubicSpline[xVal_, a_] := Module[{n, i, h, alpha, l, mu, z, b, c, d},
 
   l[[n + 1]] = 1;
   z[[n + 1]] = 0;
-  b[[n + 1]] = 0;
   c[[n + 1]] = 0;
-  d[[n + 1]] = 0;
 
   For[i = n - 1, i >= 0, i--, Module[{},
     c[[i + 1]] = z[[i + 1]] - mu[[i + 1]] * c[[i + 2]];
@@ -42,8 +40,8 @@ NaturalCubicSpline[xVal_, a_] := Module[{n, i, h, alpha, l, mu, z, b, c, d},
   Return[Function[{x},
     Module[{j},
       If[x <= xVal[[1]], j = 0,
-        If[x >= xVal[[n + 1]], j = n,
-          For[j = 0, j <= n && !(xVal[[j + 1]] <= x && x <= xVal[[j + 2]]), j++]
+        If[x >= xVal[[n]], j = n - 1,
+          For[j = 0, j <= n - 1 && !(xVal[[j + 1]] <= x && x <= xVal[[j + 2]]), j++]
         ]
       ];
 

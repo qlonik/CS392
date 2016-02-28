@@ -33,9 +33,7 @@ function NaturalCubicSpline(x, a) {
 
   l[n] = 1;
   z[n] = 0;
-  b[n] = 0;
   c[n] = 0;
-  d[n] = 0;
 
   for (let j = n - 1; j >= 0; j--) {
     c[j] = z[j] - mu[j] * c[j + 1];
@@ -47,10 +45,10 @@ function NaturalCubicSpline(x, a) {
     let j;
     if (y <= x[0]) {
       j = 0;
-    } else if (y >= x[n]) {
-      j = n;
+    } else if (y >= x[n - 1]) {
+      j = n - 1;
     } else {
-      for (j = 0; j <= n && !(x[j] <= y && y <= x[j + 1]); j++) {}
+      for (j = 0; j <= n - 1 && !(x[j] <= y && y <= x[j + 1]); j++) {}
     }
 
     return a[j] +
