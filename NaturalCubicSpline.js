@@ -50,7 +50,7 @@ function NaturalCubicSpline(x, a) {
     } else if (y >= x[n]) {
       j = n;
     } else {
-      for (j = 0; j <= n && !(x[j] < y && y <= x[j + 1]); j++) {}
+      for (j = 0; j <= n && !(x[j] <= y && y <= x[j + 1]); j++) {}
     }
 
     return a[j] +
