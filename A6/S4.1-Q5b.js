@@ -9,7 +9,7 @@ const fx = {
 
 const estimator = ThreePointFormula(fx);
 
-console.log('f\'(8.1) =', estimator.Endpoint(8.1, 0.2));
-console.log('f\'(8.3) =', estimator.Midpoint(8.3, 0.2));
-console.log('f\'(8.5) =', estimator.Midpoint(8.5, 0.2));
-console.log('f\'(8.7) =', estimator.Endpoint(8.7, -0.2));
+console.log('f\'(8.1) =', estimator(8.1, 0.2));
+console.log('f\'(8.3) =', estimator(8.3, 0.2));
+console.log('f\'(8.5) =', estimator(8.5, 0.2));
+console.log('f\'(8.7) =', estimator(8.7, 0.2));
