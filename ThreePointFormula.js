@@ -1,3 +1,5 @@
+const math = require('mathjs');
+
 /**
  *
  * @param fx
@@ -15,7 +17,14 @@ function ThreePointFormula(fx) {
      * @returns {number}
      */
     Endpoint: function(x, h) {
-      return (-3 * fx[x] + 4 * fx[x + h] - fx[x + 2 * h]) / (2 * h);
+      const xh = parseFloat(math.add(
+        math.bignumber(x), math.bignumber(h)
+      ).toString());
+      const x2h = parseFloat(math.add(
+        math.bignumber(x), math.multiply(2, math.bignumber(h))
+      ).toString());
+
+      return (-3 * fx[x] + 4 * fx[xh] - fx[x2h]) / (2 * h);
     },
     /**
      *
@@ -24,7 +33,14 @@ function ThreePointFormula(fx) {
      * @returns {number}
      */
     Midpoint: function(x, h) {
-      return (fx[x + h] - fx[x - h]) / (2 * h);
+      const xph = parseFloat(math.add(
+        math.bignumber(x), math.bignumber(h)
+      ).toString());
+      const xmh = parseFloat(math.subtract(
+        math.bignumber(x), math.bignumber(h)
+      ).toString());
+
+      return (fx[xph] - fx[xmh]) / (2 * h);
     },
   }
 }
