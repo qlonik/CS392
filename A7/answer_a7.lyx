@@ -520,7 +520,7 @@ where
 , we have, 
 \begin_inset Formula 
 \[
-a_{0}=\int_{a}^{b}L_{0}(x)dx=\int_{a}^{b}\frac{x-x_{1}}{x_{0}-x_{1}}dx=\frac{1}{-h}\int_{a}^{a+3h}(x-(a+2h))dx=-\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+2h)x\right)\right\rvert_{a}^{a+3h}=
+a_{0}=\int_{a}^{b}L_{0}(x)dx=\int_{a}^{b}\frac{x-x_{1}}{x_{0}-x_{1}}dx=\frac{1}{-h}\int_{a}^{a+3h}(x-(a+2h))dx=-\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+2h)x\right)\right\rvert _{a}^{a+3h}=
 \]
 
 \end_inset
@@ -544,7 +544,7 @@ a_{0}=\int_{a}^{b}L_{0}(x)dx=\int_{a}^{b}\frac{x-x_{1}}{x_{0}-x_{1}}dx=\frac{1}{
 
 \begin_inset Formula 
 \[
-a_{1}=\int_{a}^{b}L_{1}(x)dx=\int_{a}^{b}\frac{x-x_{0}}{x_{1}-x_{0}}dx=\frac{1}{h}\int_{a}^{a+3h}(x-(a+h))dx=\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+h)x\right)\right\rvert_{a}^{a+3h}=
+a_{1}=\int_{a}^{b}L_{1}(x)dx=\int_{a}^{b}\frac{x-x_{0}}{x_{1}-x_{0}}dx=\frac{1}{h}\int_{a}^{a+3h}(x-(a+h))dx=\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+h)x\right)\right\rvert _{a}^{a+3h}=
 \]
 
 \end_inset
@@ -560,7 +560,7 @@ a_{1}=\int_{a}^{b}L_{1}(x)dx=\int_{a}^{b}\frac{x-x_{0}}{x_{1}-x_{0}}dx=\frac{1}{
 
 \begin_inset Formula 
 \[
-\int_{-1}^{2}t(t-1)dt=\left.\frac{t^{3}}{3}\right\rvert_{-1}^{2}-\left.\frac{t^{2}}{2}\right\rvert_{-1}^{2}=3-\frac{3}{2}=\frac{3}{2}\text{.}
+\int_{-1}^{2}t(t-1)dt=\left.\frac{t^{3}}{3}\right\rvert _{-1}^{2}-\left.\frac{t^{2}}{2}\right\rvert _{-1}^{2}=3-\frac{3}{2}=\frac{3}{2}\text{.}
 \]
 
 \end_inset
@@ -884,7 +884,7 @@ Determine the values of
 The error from Composite Midpoint rule is 
 \begin_inset Formula 
 \[
-\left|\frac{b-a}{6}h^{2}f''(\mu)\right|=\left|\frac{1}{3}h^{2}(12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu)\right|=\frac{h^{2}}{3}\left|e^{2\mu}\right|\left|12\cos3\mu-5\sin3\mu\right|=Err\text{.}
+\left|\frac{b-a}{6}h^{2}f''(\mu)\right|=\left|\frac{1}{3}h^{2}(12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu)\right|=\frac{h^{2}}{3}\left|12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu\right|=Err\text{.}
 \]
 
 \end_inset
@@ -893,10 +893,44 @@ The error from Composite Midpoint rule is
 \end_layout
 
 \begin_layout Standard
-Since, 
+We need to find the maximum value for the 
+\begin_inset Formula $g(\mu)=12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu$
+\end_inset
+
+ function.
+ For this, we will find critical points, i.e.
+ points at which 
+\begin_inset Formula $g'(\mu)$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $0$
+\end_inset
+
+ or is undefined.
+ We know that 
+\begin_inset Formula $g'(\mu)=9e^{2\mu}\cos3\mu-46e^{2\mu}\sin3\mu$
+\end_inset
+
+.
+ Since this function is defined for all value of 
+\begin_inset Formula $\mu\in(0,2)$
+\end_inset
+
+, the only value we can find is when 
+\begin_inset Formula $g'(\mu)=0$
+\end_inset
+
+.
+ So, 
+\begin_inset Formula $9e^{2\mu}\cos3\mu-46e^{2\mu}\sin3\mu=0$
+\end_inset
+
+.
+ Which is true for 
 \begin_inset Formula 
 \[
--1\le\cos3\mu\le1\text{ and }-1\le\sin5\mu\le1\text{,}
+\mu_{1}=\frac{2}{3}\arctan\left[-\frac{46}{9}-\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}k\text{,}
 \]
 
 \end_inset
@@ -904,7 +938,28 @@ Since,
 
 \begin_inset Formula 
 \[
--17\le12\cos3\mu-5\sin3\mu\le17\text{,}
+\mu_{2}=\frac{2}{3}\arctan\left[-\frac{46}{9}+\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}k\text{,}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Since, 
+\begin_inset Formula $0\le\mu\le2$
+\end_inset
+
+, the approximate values for 
+\begin_inset Formula $\mu$
+\end_inset
+
+ are given as:
+\begin_inset Formula 
+\[
+\mu\approx1.11160137914587\text{ for }\mu_{1}\text{ with }k=1\text{,}
 \]
 
 \end_inset
@@ -912,7 +967,7 @@ Since,
 
 \begin_inset Formula 
 \[
-\left|12\cos3\mu-5\sin3\mu\right|\le17\text{.}
+\mu\approx0.0644038279492687\text{ for }\mu_{2}\text{ with }k=0\text{.}
 \]
 
 \end_inset
@@ -921,15 +976,161 @@ Since,
 \end_layout
 
 \begin_layout Standard
-Also, since 
-\begin_inset Formula $\mu\in(a,b)=(0,2)$
+So, for various values of 
+\begin_inset Formula $\mu$
 \end_inset
 
-, 
-\begin_inset Formula 
-\[
-1\le e^{2\mu}\le e^{4}\Rightarrow\left|e^{2\mu}\right|\le e^{4}
-\]
+, we have values for 
+\begin_inset Formula $g(\mu)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g(\mu)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $12$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{2}{3}\arctan\left[-\frac{46}{9}+\frac{13\sqrt{13}}{9}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx12.3036334758712$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}\arctan\left[-\frac{46}{9}-\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx-99.9119927193955$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx705.360102876099$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -937,10 +1138,27 @@ Also, since
 \end_layout
 
 \begin_layout Standard
-Therefore, 
+So, on our interval we are getting maximum value for 
+\begin_inset Formula $\mu=2$
+\end_inset
+
+ and the approximation is 
+\begin_inset Formula $705.360102876099$
+\end_inset
+
+.
+ Therefore, 
 \begin_inset Formula 
 \[
-Err\le\frac{17}{3}e^{4}h^{2}<10^{-4}
+Err\le\frac{h^{2}}{3}\cdot705.360102876099<10^{-4}\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h<\frac{1}{10^{2}}\sqrt{\frac{3}{705.360102876099}}\approx0.000652161537405112\text{.}
 \]
 
 \end_inset
@@ -953,10 +1171,18 @@ Since,
 \begin_inset Formula $h=(b-a)/(n+2)$
 \end_inset
 
-,
+, 
+\begin_inset Formula $a=0$
+\end_inset
+
+, and 
+\begin_inset Formula $b=2$
+\end_inset
+
+, 
 \begin_inset Formula 
 \[
-\frac{b-a}{n+2}<\sqrt{10^{-4}\cdot e^{-4}\cdot\frac{3}{17}}\text{,}
+\frac{705.360102876099}{3}\cdot\left(\frac{2}{n+2}\right)^{2}<10^{-4}\text{,}
 \]
 
 \end_inset
@@ -964,7 +1190,7 @@ Since,
 
 \begin_inset Formula 
 \[
-n>\frac{2}{\sqrt{10^{-4}\cdot e^{-4}\cdot\frac{3}{17}}}-2\approx3515.89\text{.}
+n>-2+200\sqrt{\frac{1}{3}\cdot705.360102876099}\approx3064.72486077270\text{.}
 \]
 
 \end_inset
@@ -973,17 +1199,16 @@ n>\frac{2}{\sqrt{10^{-4}\cdot e^{-4}\cdot\frac{3}{17}}}-2\approx3515.89\text{.}
 \end_layout
 
 \begin_layout Standard
-So, the Composite Midpoint rule requires 
-\begin_inset Formula $n\ge3516$
+Since, for Composite Midpoint rule 
+\begin_inset Formula $n$
 \end_inset
 
-.
- For 
-\begin_inset Formula $n=3516$
+ has to be even, 
+\begin_inset Formula $n\ge3066$
 \end_inset
 
-, 
-\begin_inset Formula $h=2/3518\approx0.0005685$
+, and 
+\begin_inset Formula $h<0.000652161537405112$
 \end_inset
 
 .
