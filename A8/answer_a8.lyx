@@ -272,7 +272,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand verbatiminput
-filename "S4.5-Q1h.m"
+filename "S4.5-Q1h.txt"
 
 \end_inset
 
