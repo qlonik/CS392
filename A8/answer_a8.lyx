@@ -317,89 +317,27 @@ filename "S4.5-Q1h_output.txt"
 
 \end_layout
 
-\begin_layout Subsubsection*
-Source code:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.2-Q1c.m"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Output:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.2-Q1c_output.txt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Question 2 (Sect4.2 - Q2c)
-\end_layout
-
-\begin_layout Standard
-Using same formulas as for question 1, we have
-\begin_inset Formula 
-\[
-N_{4}(x,h)\approx2.2751458
-\]
-
-\end_inset
-
-
+Question 2 (Sect4.5 - Q3)
 \end_layout
 
 \begin_layout Subsubsection*
+Part A
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $R_{4,4}$
+\end_inset
+
+ for 
+\begin_inset Formula $\int_{1}^{1.5}x^{2}\ln xdx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Source code:
 \end_layout
 
@@ -420,7 +358,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand verbatiminput
-filename "S4.2-Q2c.m"
+filename "S4.5-Q3a.txt"
 
 \end_inset
 
@@ -432,7 +370,7 @@ filename "S4.2-Q2c.m"
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Standard
 Output:
 \end_layout
 
@@ -453,7 +391,89 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand verbatiminput
-filename "S4.2-Q2c_output.txt"
+filename "S4.5-Q3a_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part H
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $R_{4,4}$
+\end_inset
+
+ for 
+\begin_inset Formula $\int_{0}^{\pi/4}(\cos x)^{2}dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.5-Q3h.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.5-Q3h_output.txt"
 
 \end_inset
 
