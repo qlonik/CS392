@@ -85,7 +85,7 @@ Question 1 (Sect4.5 - Q1)
 \end_layout
 
 \begin_layout Standard
-The general formula for Romberg Interpolation is defined as 
+The general formula for Romberg Integration is defined as 
 \begin_inset Formula 
 \[
 R_{k,j}=R_{k,j-1}+\frac{1}{4^{j-1}-1}(R_{k,j-1}-R_{k-1,j-1})\text{, for }k=j,j+1,\dots
