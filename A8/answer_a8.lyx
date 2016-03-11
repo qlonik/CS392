@@ -1,0 +1,1418 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{systeme}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+CS 392 A8 Nikita Volodin 127196
+\end_layout
+
+\begin_layout Subsection*
+Question 1 (Sect4.5 - Q1)
+\end_layout
+
+\begin_layout Standard
+The general formula for Romberg Interpolation is defined as 
+\begin_inset Formula 
+\[
+R_{k,j}=R_{k,j-1}+\frac{1}{4^{j-1}-1}(R_{k,j-1}-R_{k-1,j-1})\text{, for }k=j,j+1,\dots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{k,1}=\frac{1}{2}\left[R_{k-1,1}+h_{k-1}\sum_{j=1}^{2^{k-2}}f(a+(2i-1)h_{k})\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{1,1}=\frac{b-a}{2}\left[f(a)+f(b)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h_{k}=\frac{b-a}{2^{k-1}}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, these formulas are defined in Mathematica as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/Romberg.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part A
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $R_{3,3}$
+\end_inset
+
+ for 
+\begin_inset Formula $\int_{1}^{1.5}x^{2}\ln xdx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.5-Q1a.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.5-Q1a_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part H
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $R_{3,3}$
+\end_inset
+
+ for 
+\begin_inset Formula $\int_{0}^{\pi/4}(\cos x)^{2}dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.5-Q1h.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.5-Q1h_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.2-Q1c.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.2-Q1c_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 2 (Sect4.2 - Q2c)
+\end_layout
+
+\begin_layout Standard
+Using same formulas as for question 1, we have
+\begin_inset Formula 
+\[
+N_{4}(x,h)\approx2.2751458
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.2-Q2c.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.2-Q2c_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 3 (Sect4.2 - Q9)
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $N(h)$
+\end_inset
+
+ is an approximation for 
+\begin_inset Formula $M$
+\end_inset
+
+ for every 
+\begin_inset Formula $h>0$
+\end_inset
+
+ and that 
+\begin_inset Formula 
+\[
+M=N(h)+K_{1}h+K_{2}h^{2}+K_{3}h^{3}+\dots\text{,}
+\]
+
+\end_inset
+
+for some 
+\begin_inset Formula $K_{1},K_{2},K_{3},\dots$
+\end_inset
+
+.
+ Then the 
+\begin_inset Formula $O(h^{3})$
+\end_inset
+
+ approximation for 
+\begin_inset Formula $M$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $N(h)$
+\end_inset
+
+, 
+\begin_inset Formula $N\left(\frac{h}{3}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $N\left(\frac{h}{9}\right)$
+\end_inset
+
+ is given as follows.
+ Replacing 
+\begin_inset Formula $h$
+\end_inset
+
+ by 
+\begin_inset Formula $h/3$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+ by 
+\begin_inset Formula $h/9$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\[
+M=N\left(\frac{h}{3}\right)+K_{1}\frac{h}{3}+K_{2}\frac{h^{2}}{9}+K_{3}\frac{h^{3}}{27}+\dots\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=N\left(\frac{h}{9}\right)+K_{1}\frac{h}{9}+K_{2}\frac{h^{2}}{81}+K_{3}\frac{h^{3}}{729}+\dots\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, we need to eliminate term with 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ coefficient, and we will have estimation with error 
+\begin_inset Formula $O(h^{2})$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+2M=\left[3N\left(\frac{h}{3}\right)-N(h)\right]+K_{2}\left(\frac{h^{2}}{3}-h^{2}\right)+K_{3}\left(\frac{h^{3}}{9}-h^{3}\right)+\dots\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+8M=\left[9N\left(\frac{h}{9}\right)-N(h)\right]+K_{2}\left(\frac{h^{2}}{9}-h^{2}\right)+K_{3}\left(\frac{h^{3}}{81}-h^{3}\right)+\dots\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dividing by 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $8$
+\end_inset
+
+ respectively give us formulas for 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+M=\frac{1}{2}\left[3N\left(\frac{h}{3}\right)-N(h)\right]-\frac{1}{3}K_{2}h^{2}-\frac{4}{9}K_{3}h^{3}+\dots\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=\frac{1}{8}\left[9N\left(\frac{h}{9}\right)-N(h)\right]-\frac{1}{9}K_{2}h^{2}-\frac{10}{81}K_{3}h^{3}+\dots\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And now, we need to eliminate term with 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ coefficient, so we will have estimation with error 
+\begin_inset Formula $O(h^{3})$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+2M=\frac{3}{8}\left[9N\left(\frac{h}{9}\right)-N(h)\right]-\frac{1}{2}\left[3N\left(\frac{h}{3}\right)-N(h)\right]+\left(-\frac{10}{27}+\frac{4}{9}\right)K_{3}h^{3}+\dots\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=\frac{27}{16}N\left(\frac{h}{9}\right)-\frac{3}{4}N\left(\frac{h}{3}\right)+\frac{1}{16}N(h)+\frac{1}{27}K_{3}h^{3}+\dots\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 4 (Sect4.3 - Q2d)
+\end_layout
+
+\begin_layout Standard
+The Trapezoidal rule is given by 
+\begin_inset Formula 
+\[
+\int_{x_{0}}^{x_{1}}f(x)dx=\frac{h}{2}\left[f(x_{0})+f(x_{1})\right]-\frac{h^{3}}{12}f''(\xi)\text{, where }x_{0}<\xi<x_{1}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore,
+\begin_inset Formula 
+\[
+\int_{e}^{e+1}\frac{1}{x\ln x}dx\approx\frac{1}{2}\left[\frac{1}{e\cdot\ln e}+\frac{1}{(e+1)\cdot\ln(e+1)}\right]=0.2863341725\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 5 (Sect4.3 - Q27)
+\end_layout
+
+\begin_layout Standard
+Given formula in Theorem 4.3, with 
+\begin_inset Formula $n=1$
+\end_inset
+
+, we have:
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\sum_{i=0}^{n}a_{i}f(x_{i})+\frac{h^{n+2}f^{(n+1)}(\xi)}{(n+1)!}\int_{-1}^{n+1}t(t-1)\dots(t-n)dt=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=a_{0}f(x_{0})+a_{1}f(x_{1})+\frac{h^{3}f''(\xi)}{2}\int_{-1}^{2}t(t-1)dt\text{,}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $a_{0}=\int_{a}^{b}L_{0}(x)dx$
+\end_inset
+
+, and 
+\begin_inset Formula $a_{1}=\int_{a}^{b}L_{1}(x)dx$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n=1$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}=a+h$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}=a+2h$
+\end_inset
+
+, 
+\begin_inset Formula $b=a+h(n+2)$
+\end_inset
+
+, we have, 
+\begin_inset Formula 
+\[
+a_{0}=\int_{a}^{b}L_{0}(x)dx=\int_{a}^{b}\frac{x-x_{1}}{x_{0}-x_{1}}dx=\frac{1}{-h}\int_{a}^{a+3h}(x-(a+2h))dx=-\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+2h)x\right)\right\rvert _{a}^{a+3h}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{1}{h}\left(\frac{(a+3h)^{2}-a^{2}}{2}-(a+2h)(a+3h-a)\right)=-\frac{1}{2h}\left(3h(2a+3h)-6h(a+2h)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{1}{2h}(6ah+9h^{2}-6ah-12h^{2})=\frac{3h^{2}}{2h}=\frac{3h}{2}\text{.}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{1}=\int_{a}^{b}L_{1}(x)dx=\int_{a}^{b}\frac{x-x_{0}}{x_{1}-x_{0}}dx=\frac{1}{h}\int_{a}^{a+3h}(x-(a+h))dx=\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+h)x\right)\right\rvert _{a}^{a+3h}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{h}\left(\frac{(a+3h)^{2}-a^{2}}{2}-3h(a+h)\right)=\frac{1}{2h}(3h(2a+3h)-6ha-6h^{2})=\frac{3h^{2}}{2h}=\frac{3h}{2}\text{.}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{-1}^{2}t(t-1)dt=\left.\frac{t^{3}}{3}\right\rvert _{-1}^{2}-\left.\frac{t^{2}}{2}\right\rvert _{-1}^{2}=3-\frac{3}{2}=\frac{3}{2}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{3h}{2}[f(x_{0})+f(x_{1})]+\frac{3h^{3}}{4}f''(\xi)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 6 (Sect4.4 - Q8)
+\end_layout
+
+\begin_layout Standard
+Approximate 
+\begin_inset Formula $\int_{0}^{2}x^{2}e^{-x^{2}}dx$
+\end_inset
+
+, using 
+\begin_inset Formula $h=0.25$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $a=0$
+\end_inset
+
+, 
+\begin_inset Formula $b=2$
+\end_inset
+
+, 
+\begin_inset Formula $h=0.25$
+\end_inset
+
+, we can find n: 
+\begin_inset Formula $n=(b-a)/h=8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Part A (Composite Trapezoidal rule)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{h}{2}\left[f(a)+2\sum_{j=1}^{n-1}f(x_{j})+f(b)\right]-\frac{b-a}{12}h^{2}f''(\mu)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.4-Q8a.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.4-Q8a_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part B (Composite Simpson's rule)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{h}{3}\left[f(a)+2\sum_{j=1}^{(n/2)-1}f(x_{2j})+4\sum_{j=1}^{n/2}f(x_{2j-1})+f(b)\right]-\frac{b-a}{180}h^{4}f^{(4)}(\mu)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.4-Q8b.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.4-Q8b_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part C (Composite Midpoint rule)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=2h\sum_{j=0}^{n/2}f(x_{2j})+\frac{b-a}{6}h^{2}f''(\mu)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.4-Q8c.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.4-Q8c_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 7 (Sect4.4 - Q11c)
+\end_layout
+
+\begin_layout Standard
+Determine the values of 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+ required to approximate 
+\begin_inset Formula $\int_{0}^{2}e^{2x}\sin3x\,dx$
+\end_inset
+
+ to within 
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+ using Composite Midpoint rule.
+\end_layout
+
+\begin_layout Standard
+The error from Composite Midpoint rule is 
+\begin_inset Formula 
+\[
+\left|\frac{b-a}{6}h^{2}f''(\mu)\right|=\left|\frac{1}{3}h^{2}(12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu)\right|=\frac{h^{2}}{3}\left|12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu\right|=Err\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We need to find the maximum value for the 
+\begin_inset Formula $g(\mu)=12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu$
+\end_inset
+
+ function.
+ For this, we will find critical points, i.e.
+ points at which 
+\begin_inset Formula $g'(\mu)$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $0$
+\end_inset
+
+ or is undefined.
+ We know that 
+\begin_inset Formula $g'(\mu)=9e^{2\mu}\cos3\mu-46e^{2\mu}\sin3\mu$
+\end_inset
+
+.
+ Since this function is defined for all value of 
+\begin_inset Formula $\mu\in(0,2)$
+\end_inset
+
+, the only value we can find is when 
+\begin_inset Formula $g'(\mu)=0$
+\end_inset
+
+.
+ So, 
+\begin_inset Formula $9e^{2\mu}\cos3\mu-46e^{2\mu}\sin3\mu=0$
+\end_inset
+
+.
+ Which is true for 
+\begin_inset Formula 
+\[
+\mu_{1}=\frac{2}{3}\arctan\left[-\frac{46}{9}-\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}k\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu_{2}=\frac{2}{3}\arctan\left[-\frac{46}{9}+\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}k\text{,}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Since, 
+\begin_inset Formula $0\le\mu\le2$
+\end_inset
+
+, the approximate values for 
+\begin_inset Formula $\mu$
+\end_inset
+
+ are given as:
+\begin_inset Formula 
+\[
+\mu\approx1.11160137914587\text{ for }\mu_{1}\text{ with }k=1\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu\approx0.0644038279492687\text{ for }\mu_{2}\text{ with }k=0\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, for various values of 
+\begin_inset Formula $\mu$
+\end_inset
+
+, we have values for 
+\begin_inset Formula $g(\mu)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g(\mu)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $12$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{2}{3}\arctan\left[-\frac{46}{9}+\frac{13\sqrt{13}}{9}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx12.3036334758712$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}\arctan\left[-\frac{46}{9}-\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx-99.9119927193955$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\approx705.360102876099$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, on our interval we are getting maximum value for 
+\begin_inset Formula $\mu=2$
+\end_inset
+
+ and the approximation is 
+\begin_inset Formula $705.360102876099$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula 
+\[
+Err\le\frac{h^{2}}{3}\cdot705.360102876099<10^{-4}\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h<\frac{1}{10^{2}}\sqrt{\frac{3}{705.360102876099}}\approx0.000652161537405112\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since, 
+\begin_inset Formula $h=(b-a)/(n+2)$
+\end_inset
+
+, 
+\begin_inset Formula $a=0$
+\end_inset
+
+, and 
+\begin_inset Formula $b=2$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{705.360102876099}{3}\cdot\left(\frac{2}{n+2}\right)^{2}<10^{-4}\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n>-2+200\sqrt{\frac{1}{3}\cdot705.360102876099}\approx3064.72486077270\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since, for Composite Midpoint rule 
+\begin_inset Formula $n$
+\end_inset
+
+ has to be even, 
+\begin_inset Formula $n\ge3066$
+\end_inset
+
+, and 
+\begin_inset Formula $h<0.000652161537405112$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
