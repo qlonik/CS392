@@ -730,80 +730,18 @@ filename "S4.7-Q1a-2a-3a.txt"
 \end_layout
 
 \begin_layout Subsection*
-Question 7 (Sect4.4 - Q11c)
+Question 7 (Sect4.7 - Q7)
 \end_layout
 
 \begin_layout Standard
-Determine the values of 
-\begin_inset Formula $n$
+For values 
+\begin_inset Formula $n=2,3$
 \end_inset
 
- and 
-\begin_inset Formula $h$
-\end_inset
-
- required to approximate 
-\begin_inset Formula $\int_{0}^{2}e^{2x}\sin3x\,dx$
-\end_inset
-
- to within 
-\begin_inset Formula $10^{-4}$
-\end_inset
-
- using Composite Midpoint rule.
-\end_layout
-
-\begin_layout Standard
-The error from Composite Midpoint rule is 
+, we know that the Legendre polynomials are given as:
 \begin_inset Formula 
 \[
-\left|\frac{b-a}{6}h^{2}f''(\mu)\right|=\left|\frac{1}{3}h^{2}(12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu)\right|=\frac{h^{2}}{3}\left|12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu\right|=Err\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We need to find the maximum value for the 
-\begin_inset Formula $g(\mu)=12e^{2\mu}\cos3\mu-5e^{2\mu}\sin3\mu$
-\end_inset
-
- function.
- For this, we will find critical points, i.e.
- points at which 
-\begin_inset Formula $g'(\mu)$
-\end_inset
-
- is equal to 
-\begin_inset Formula $0$
-\end_inset
-
- or is undefined.
- We know that 
-\begin_inset Formula $g'(\mu)=9e^{2\mu}\cos3\mu-46e^{2\mu}\sin3\mu$
-\end_inset
-
-.
- Since this function is defined for all value of 
-\begin_inset Formula $\mu\in(0,2)$
-\end_inset
-
-, the only value we can find is when 
-\begin_inset Formula $g'(\mu)=0$
-\end_inset
-
-.
- So, 
-\begin_inset Formula $9e^{2\mu}\cos3\mu-46e^{2\mu}\sin3\mu=0$
-\end_inset
-
-.
- Which is true for 
-\begin_inset Formula 
-\[
-\mu_{1}=\frac{2}{3}\arctan\left[-\frac{46}{9}-\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}k\text{,}
+P_{2}(x)=x^{2}-\frac{1}{3}\text{,}
 \]
 
 \end_inset
@@ -811,36 +749,18 @@ We need to find the maximum value for the
 
 \begin_inset Formula 
 \[
-\mu_{2}=\frac{2}{3}\arctan\left[-\frac{46}{9}+\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}k\text{,}
+P_{3}(x)=x^{3}-\frac{3}{5}x\text{,}
 \]
 
 \end_inset
 
-where 
-\begin_inset Formula $k\in\mathbb{Z}$
-\end_inset
-
-.
- Since, 
-\begin_inset Formula $0\le\mu\le2$
-\end_inset
-
-, the approximate values for 
-\begin_inset Formula $\mu$
-\end_inset
-
- are given as:
+and the values for coefficient are defined as:
 \begin_inset Formula 
 \[
-\mu\approx1.11160137914587\text{ for }\mu_{1}\text{ with }k=1\text{,}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\mu\approx0.0644038279492687\text{ for }\mu_{2}\text{ with }k=0\text{.}
+c_{i}=\int_{-1}^{1}\prod_{\substack{j=1\\
+j\ne i
+}
+}^{n}\frac{x-x_{j}}{x_{i}-x_{j}}dx\text{.}
 \]
 
 \end_inset
@@ -849,22 +769,15 @@ where
 \end_layout
 
 \begin_layout Standard
-So, for various values of 
-\begin_inset Formula $\mu$
-\end_inset
-
-, we have values for 
-\begin_inset Formula $g(\mu)$
-\end_inset
-
-.
+So, for these formulas, we get results for roots and coefficients:
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="6" columns="3">
 <features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -872,68 +785,17 @@ So, for various values of
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mu$
-\end_inset
-
-
+n
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $g(\mu)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $12$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $\frac{2}{3}\arctan\left[-\frac{46}{9}+\frac{13\sqrt{13}}{9}\right]$
+Roots 
+\begin_inset Formula $r_{n,j}$
 \end_inset
 
 
@@ -945,7 +807,8 @@ So, for various values of
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\approx12.3036334758712$
+Coefficients 
+\begin_inset Formula $c_{n,j}$
 \end_inset
 
 
@@ -955,33 +818,7 @@ So, for various values of
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\frac{2}{3}\arctan\left[-\frac{46}{9}-\frac{13\sqrt{13}}{9}\right]+\frac{2\pi}{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\approx-99.9119927193955$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -990,11 +827,163 @@ So, for various values of
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.5773502692$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.000000000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-0.5773502692$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.000000000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7745966692$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.5555555556$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.88888889$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-0.774596669$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\approx705.360102876099$
+\begin_inset Formula $0.555555556$
 \end_inset
 
 
@@ -1010,81 +999,37 @@ So, for various values of
 
 \end_layout
 
+\begin_layout Subsubsection*
+Source code used to generate these values:
+\end_layout
+
 \begin_layout Standard
-So, on our interval we are getting maximum value for 
-\begin_inset Formula $\mu=2$
-\end_inset
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
- and the approximation is 
-\begin_inset Formula $705.360102876099$
-\end_inset
-
-.
- Therefore, 
-\begin_inset Formula 
-\[
-Err\le\frac{h^{2}}{3}\cdot705.360102876099<10^{-4}\text{,}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-h<\frac{1}{10^{2}}\sqrt{\frac{3}{705.360102876099}}\approx0.000652161537405112\text{.}
-\]
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S4.7-Q7.txt"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Since, 
-\begin_inset Formula $h=(b-a)/(n+2)$
-\end_inset
-
-, 
-\begin_inset Formula $a=0$
-\end_inset
-
-, and 
-\begin_inset Formula $b=2$
-\end_inset
-
-, 
-\begin_inset Formula 
-\[
-\frac{705.360102876099}{3}\cdot\left(\frac{2}{n+2}\right)^{2}<10^{-4}\text{,}
-\]
-
 \end_inset
 
 
-\begin_inset Formula 
-\[
-n>-2+200\sqrt{\frac{1}{3}\cdot705.360102876099}\approx3064.72486077270\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Since, for Composite Midpoint rule 
-\begin_inset Formula $n$
-\end_inset
-
- has to be even, 
-\begin_inset Formula $n\ge3066$
-\end_inset
-
-, and 
-\begin_inset Formula $h<0.000652161537405112$
-\end_inset
-
-.
 \end_layout
 
 \end_body
