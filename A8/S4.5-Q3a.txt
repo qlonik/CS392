@@ -1,3 +1,3 @@
-Import[StringJoin[{NotebookDirectory[],"../Romberg.m"}]];
-f[x_]:=x^2*Log[x];
-N[R[4,4,1,3/2],15]
+Import[StringJoin[{NotebookDirectory[], "../Romberg.m"}]];
+f[x_] := x^2 * Log[x];
+N[R[4, 4, 1, 3 / 2], 15]
