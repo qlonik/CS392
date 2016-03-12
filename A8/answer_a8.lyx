@@ -571,59 +571,24 @@ M=N\left(\frac{h}{9}\right)+K_{1}\frac{h}{9}+K_{2}\frac{h^{2}}{81}+K_{3}\frac{h^
 
 \end_layout
 
-\begin_layout Standard
-Now, we need to eliminate term with 
-\begin_inset Formula $K_{1}$
-\end_inset
-
- coefficient, and we will have estimation with error 
-\begin_inset Formula $O(h^{2})$
-\end_inset
-
-.
-\begin_inset Formula 
-\[
-2M=\left[3N\left(\frac{h}{3}\right)-N(h)\right]+K_{2}\left(\frac{h^{2}}{3}-h^{2}\right)+K_{3}\left(\frac{h^{3}}{9}-h^{3}\right)+\dots\text{,}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-8M=\left[9N\left(\frac{h}{9}\right)-N(h)\right]+K_{2}\left(\frac{h^{2}}{9}-h^{2}\right)+K_{3}\left(\frac{h^{3}}{81}-h^{3}\right)+\dots\text{.}
-\]
-
-\end_inset
-
-
+\begin_layout Subsection*
+Question 4 (Sect4.7 - Q1a)
 \end_layout
 
 \begin_layout Standard
-Dividing by 
-\begin_inset Formula $2$
+We are given the integral 
+\begin_inset Formula $\int_{1}^{1.5}x^{2}\ln xdx$
 \end_inset
 
  and 
-\begin_inset Formula $8$
-\end_inset
-
- respectively give us formulas for 
-\begin_inset Formula $M$
+\begin_inset Formula $n=2$
 \end_inset
 
 .
+ We need to transform it into the form compatible with Gaussian Quadrature:
 \begin_inset Formula 
 \[
-M=\frac{1}{2}\left[3N\left(\frac{h}{3}\right)-N(h)\right]-\frac{1}{3}K_{2}h^{2}-\frac{4}{9}K_{3}h^{3}+\dots\text{,}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-M=\frac{1}{8}\left[9N\left(\frac{h}{9}\right)-N(h)\right]-\frac{1}{9}K_{2}h^{2}-\frac{10}{81}K_{3}h^{3}+\dots\text{.}
+\int_{1}^{1.5}x^{2}\ln xdx=\int_{-1}^{1}\frac{1/2}{2}\cdot\left(\frac{t/2+5/2}{2}\right)^{2}\ln\left(\frac{t/2+5/2}{2}\right)dt=\int_{-1}^{1}\frac{(t+5)^{2}}{16}\cdot\ln\left(\frac{t+5}{4}\right)dt\text{.}
 \]
 
 \end_inset
@@ -632,18 +597,10 @@ M=\frac{1}{8}\left[9N\left(\frac{h}{9}\right)-N(h)\right]-\frac{1}{9}K_{2}h^{2}-
 \end_layout
 
 \begin_layout Standard
-And now, we need to eliminate term with 
-\begin_inset Formula $K_{2}$
-\end_inset
-
- coefficient, so we will have estimation with error 
-\begin_inset Formula $O(h^{3})$
-\end_inset
-
-.
+Now, we can apply Gaussian Quadratures:
 \begin_inset Formula 
 \[
-2M=\frac{3}{8}\left[9N\left(\frac{h}{9}\right)-N(h)\right]-\frac{1}{2}\left[3N\left(\frac{h}{3}\right)-N(h)\right]+\left(-\frac{10}{27}+\frac{4}{9}\right)K_{3}h^{3}+\dots\text{,}
+\int_{-1}^{1}\frac{(t+5)^{2}}{16}\cdot\ln\left(\frac{t+5}{4}\right)dt=c_{1}F(x_{1})+c_{2}F(x_{2})=
 \]
 
 \end_inset
@@ -651,7 +608,7 @@ And now, we need to eliminate term with
 
 \begin_inset Formula 
 \[
-M=\frac{27}{16}N\left(\frac{h}{9}\right)-\frac{3}{4}N\left(\frac{h}{3}\right)+\frac{1}{16}N(h)+\frac{1}{27}K_{3}h^{3}+\dots\text{.}
+=F(0.5773502692)+F(-0.5773502692)\approx0.1922687064
 \]
 
 \end_inset
@@ -660,46 +617,18 @@ M=\frac{27}{16}N\left(\frac{h}{9}\right)-\frac{3}{4}N\left(\frac{h}{3}\right)+\f
 \end_layout
 
 \begin_layout Subsection*
-Question 4 (Sect4.3 - Q2d)
+Question 5 (Sect4.7 - Q2a)
 \end_layout
 
 \begin_layout Standard
-The Trapezoidal rule is given by 
-\begin_inset Formula 
-\[
-\int_{x_{0}}^{x_{1}}f(x)dx=\frac{h}{2}\left[f(x_{0})+f(x_{1})\right]-\frac{h^{3}}{12}f''(\xi)\text{, where }x_{0}<\xi<x_{1}\text{.}
-\]
-
+Given the same integral as in previous question and 
+\begin_inset Formula $n=3$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Therefore,
+, when we apply Gaussian Quadratures, we have:
 \begin_inset Formula 
 \[
-\int_{e}^{e+1}\frac{1}{x\ln x}dx\approx\frac{1}{2}\left[\frac{1}{e\cdot\ln e}+\frac{1}{(e+1)\cdot\ln(e+1)}\right]=0.2863341725\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Question 5 (Sect4.3 - Q27)
-\end_layout
-
-\begin_layout Standard
-Given formula in Theorem 4.3, with 
-\begin_inset Formula $n=1$
-\end_inset
-
-, we have:
-\begin_inset Formula 
-\[
-\int_{a}^{b}f(x)dx=\sum_{i=0}^{n}a_{i}f(x_{i})+\frac{h^{n+2}f^{(n+1)}(\xi)}{(n+1)!}\int_{-1}^{n+1}t(t-1)\dots(t-n)dt=
+\int_{-1}^{1}\frac{(t+5)^{2}}{16}\cdot\ln\left(\frac{t+5}{4}\right)dt=c_{1}F(x_{1})+c_{2}F(x_{2})+c_{3}F(x_{3})=
 \]
 
 \end_inset
@@ -707,40 +636,7 @@ Given formula in Theorem 4.3, with
 
 \begin_inset Formula 
 \[
-=a_{0}f(x_{0})+a_{1}f(x_{1})+\frac{h^{3}f''(\xi)}{2}\int_{-1}^{2}t(t-1)dt\text{,}
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $a_{0}=\int_{a}^{b}L_{0}(x)dx$
-\end_inset
-
-, and 
-\begin_inset Formula $a_{1}=\int_{a}^{b}L_{1}(x)dx$
-\end_inset
-
-.
- Since 
-\begin_inset Formula $n=1$
-\end_inset
-
-, 
-\begin_inset Formula $x_{0}=a+h$
-\end_inset
-
-, 
-\begin_inset Formula $x_{1}=a+2h$
-\end_inset
-
-, 
-\begin_inset Formula $b=a+h(n+2)$
-\end_inset
-
-, we have, 
-\begin_inset Formula 
-\[
-a_{0}=\int_{a}^{b}L_{0}(x)dx=\int_{a}^{b}\frac{x-x_{1}}{x_{0}-x_{1}}dx=\frac{1}{-h}\int_{a}^{a+3h}(x-(a+2h))dx=-\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+2h)x\right)\right\rvert _{a}^{a+3h}=
+=0.5555555556\cdot F(0.7745966692)+0.8888888889\cdot F(0)+0.5555555556\cdot F(\text{−}0.7745966692)\approx
 \]
 
 \end_inset
@@ -748,51 +644,7 @@ a_{0}=\int_{a}^{b}L_{0}(x)dx=\int_{a}^{b}\frac{x-x_{1}}{x_{0}-x_{1}}dx=\frac{1}{
 
 \begin_inset Formula 
 \[
-=-\frac{1}{h}\left(\frac{(a+3h)^{2}-a^{2}}{2}-(a+2h)(a+3h-a)\right)=-\frac{1}{2h}\left(3h(2a+3h)-6h(a+2h)\right)=
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-=-\frac{1}{2h}(6ah+9h^{2}-6ah-12h^{2})=\frac{3h^{2}}{2h}=\frac{3h}{2}\text{.}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-a_{1}=\int_{a}^{b}L_{1}(x)dx=\int_{a}^{b}\frac{x-x_{0}}{x_{1}-x_{0}}dx=\frac{1}{h}\int_{a}^{a+3h}(x-(a+h))dx=\frac{1}{h}\left.\left(\frac{x^{2}}{2}-(a+h)x\right)\right\rvert _{a}^{a+3h}=
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-=\frac{1}{h}\left(\frac{(a+3h)^{2}-a^{2}}{2}-3h(a+h)\right)=\frac{1}{2h}(3h(2a+3h)-6ha-6h^{2})=\frac{3h^{2}}{2h}=\frac{3h}{2}\text{.}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\int_{-1}^{2}t(t-1)dt=\left.\frac{t^{3}}{3}\right\rvert _{-1}^{2}-\left.\frac{t^{2}}{2}\right\rvert _{-1}^{2}=3-\frac{3}{2}=\frac{3}{2}\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Therefore, 
-\begin_inset Formula 
-\[
-\int_{a}^{b}f(x)dx=\frac{3h}{2}[f(x_{0})+f(x_{1})]+\frac{3h^{3}}{4}f''(\xi)\text{.}
+\approx0.1922593773
 \]
 
 \end_inset
@@ -801,46 +653,42 @@ Therefore,
 \end_layout
 
 \begin_layout Subsection*
-Question 6 (Sect4.4 - Q8)
+Question 6 (Sect4.7 - Q3a)
 \end_layout
 
 \begin_layout Standard
-Approximate 
-\begin_inset Formula $\int_{0}^{2}x^{2}e^{-x^{2}}dx$
+Given the same integral as in previous question and 
+\begin_inset Formula $n=4$
 \end_inset
 
-, using 
-\begin_inset Formula $h=0.25$
-\end_inset
-
-.
- Since 
-\begin_inset Formula $a=0$
-\end_inset
-
-, 
-\begin_inset Formula $b=2$
-\end_inset
-
-, 
-\begin_inset Formula $h=0.25$
-\end_inset
-
-, we can find n: 
-\begin_inset Formula $n=(b-a)/h=8$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection*
-Part A (Composite Trapezoidal rule)
-\end_layout
-
-\begin_layout Standard
+, when we apply Gaussian Quadratures, we have:
 \begin_inset Formula 
 \[
-\int_{a}^{b}f(x)dx=\frac{h}{2}\left[f(a)+2\sum_{j=1}^{n-1}f(x_{j})+f(b)\right]-\frac{b-a}{12}h^{2}f''(\mu)\text{.}
+\int_{-1}^{1}\frac{(t+5)^{2}}{16}\cdot\ln\left(\frac{t+5}{4}\right)dt=c_{1}F(x_{1})+c_{2}F(x_{2})+c_{3}F(x_{3})+c_{4}F(x_{4})=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=0.3478548451\cdot F(0.8611363116)+0.6521451549\cdot F(0.3399810436)+
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++0.6521451549\cdot F(-0.3399810436)+0.3478548451\cdot F(-0.8611363116)\approx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\approx0.1922593578
 \]
 
 \end_inset
@@ -848,8 +696,8 @@ Part A (Composite Trapezoidal rule)
 
 \end_layout
 
-\begin_layout Standard
-Source code:
+\begin_layout Subsection*
+Source code used in questions 4, 5, and 6:
 \end_layout
 
 \begin_layout Standard
@@ -869,202 +717,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand verbatiminput
-filename "S4.4-Q8a.m"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Output:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.4-Q8a_output.txt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Part B (Composite Simpson's rule)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\int_{a}^{b}f(x)dx=\frac{h}{3}\left[f(a)+2\sum_{j=1}^{(n/2)-1}f(x_{2j})+4\sum_{j=1}^{n/2}f(x_{2j-1})+f(b)\right]-\frac{b-a}{180}h^{4}f^{(4)}(\mu)\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Source code:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.4-Q8b.m"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Output:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.4-Q8b_output.txt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Part C (Composite Midpoint rule)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\int_{a}^{b}f(x)dx=2h\sum_{j=0}^{n/2}f(x_{2j})+\frac{b-a}{6}h^{2}f''(\mu)\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Source code:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.4-Q8c.m"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Output:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "S4.4-Q8c_output.txt"
+filename "S4.7-Q1a-2a-3a.txt"
 
 \end_inset
 
