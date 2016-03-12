@@ -1,0 +1,16 @@
+P2[x_] := x^2 - 1 / 3;
+r2 = SetPrecision[Solve[P2[x] == 0, x], 10];
+c2[i_] := Integrate[Product[If[j == i, 1,
+  (s - Replace[x, r2[[j]]]) / (Replace[x, r2[[i]]] - Replace[x, r2[[j]]])],
+  {j, 1, 2}], {s, -1, 1}];
+Print[c2[1], r2[[1]]]
+Print[c2[2], r2[[2]]]
+
+P3[x_] := x^3 - 3 / 5 * x;
+r3 = SetPrecision[Solve[P3[x] == 0, x], 10];
+c3[i_] := Integrate[Product[If[j == i, 1,
+  (s - Replace[x, r3[[j]]]) / (Replace[x, r3[[i]]] - Replace[x, r3[[j]]])],
+  {j, 1, 3}], {s, -1, 1}];
+Print[c3[1], r3[[1]]]
+Print[c3[2], r3[[2]]]
+Print[c3[3], r3[[3]]]
