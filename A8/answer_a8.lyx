@@ -486,92 +486,6 @@ filename "S4.5-Q3h_output.txt"
 \end_layout
 
 \begin_layout Subsection*
-Question 3 (Sect4.2 - Q9)
-\end_layout
-
-\begin_layout Standard
-Suppose 
-\begin_inset Formula $N(h)$
-\end_inset
-
- is an approximation for 
-\begin_inset Formula $M$
-\end_inset
-
- for every 
-\begin_inset Formula $h>0$
-\end_inset
-
- and that 
-\begin_inset Formula 
-\[
-M=N(h)+K_{1}h+K_{2}h^{2}+K_{3}h^{3}+\dots\text{,}
-\]
-
-\end_inset
-
-for some 
-\begin_inset Formula $K_{1},K_{2},K_{3},\dots$
-\end_inset
-
-.
- Then the 
-\begin_inset Formula $O(h^{3})$
-\end_inset
-
- approximation for 
-\begin_inset Formula $M$
-\end_inset
-
- in terms of 
-\begin_inset Formula $N(h)$
-\end_inset
-
-, 
-\begin_inset Formula $N\left(\frac{h}{3}\right)$
-\end_inset
-
-, 
-\begin_inset Formula $N\left(\frac{h}{9}\right)$
-\end_inset
-
- is given as follows.
- Replacing 
-\begin_inset Formula $h$
-\end_inset
-
- by 
-\begin_inset Formula $h/3$
-\end_inset
-
- and 
-\begin_inset Formula $h$
-\end_inset
-
- by 
-\begin_inset Formula $h/9$
-\end_inset
-
-, we have 
-\begin_inset Formula 
-\[
-M=N\left(\frac{h}{3}\right)+K_{1}\frac{h}{3}+K_{2}\frac{h^{2}}{9}+K_{3}\frac{h^{3}}{27}+\dots\text{,}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-M=N\left(\frac{h}{9}\right)+K_{1}\frac{h}{9}+K_{2}\frac{h^{2}}{81}+K_{3}\frac{h^{3}}{729}+\dots\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
 Question 4 (Sect4.7 - Q1a)
 \end_layout
 
@@ -616,6 +530,39 @@ Now, we can apply Gaussian Quadratures:
 
 \end_layout
 
+\begin_layout Standard
+The exact value for this integral is evaluated as:
+\begin_inset Formula 
+\[
+\int_{1}^{1.5}x^{2}\ln xdx=-\frac{19}{72}+\frac{9}{8}\cdot\ln\frac{3}{2}\approx0.192259357732796
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The value for this integral as evaluated using Romberg Integration is given
+ as:
+\begin_inset Formula 
+\[
+R_{3,3}\approx0.192259337314444
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{4,4}\approx0.192259357706584
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Question 5 (Sect4.7 - Q2a)
 \end_layout
@@ -645,6 +592,35 @@ Given the same integral as in previous question and
 \begin_inset Formula 
 \[
 \approx0.1922593773
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The values for exact integration and Romberg integration are given in the
+ previous question and equal to:
+\begin_inset Formula 
+\[
+I=-\frac{19}{72}+\frac{9}{8}\cdot\ln\frac{3}{2}\approx0.192259357732796
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{3,3}\approx0.192259337314444
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{4,4}\approx0.192259357706584
 \]
 
 \end_inset
@@ -689,6 +665,35 @@ Given the same integral as in previous question and
 \begin_inset Formula 
 \[
 \approx0.1922593578
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The values for exact integration and Romberg integration are given in the
+ previous question and equal to:
+\begin_inset Formula 
+\[
+I=-\frac{19}{72}+\frac{9}{8}\cdot\ln\frac{3}{2}\approx0.192259357732796
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{3,3}\approx0.192259337314444
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{4,4}\approx0.192259357706584
 \]
 
 \end_inset
