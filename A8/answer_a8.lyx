@@ -486,6 +486,106 @@ filename "S4.5-Q3h_output.txt"
 \end_layout
 
 \begin_layout Subsection*
+Question 3 (Sect4.5 - Q13)
+\end_layout
+
+\begin_layout Standard
+Using the formula for Romberg Integration:
+\begin_inset Formula 
+\[
+R_{k,2}=\frac{1}{3}(4R_{k,1}-R_{k-1,1})\text{,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{k,1}=\frac{1}{2}\left[R_{k-1,1}+h_{k-1}\sum_{i=1}^{2^{k-2}}f(a+(2i-1)h_{k})\right]\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, 
+\begin_inset Formula 
+\[
+R_{k,2}=\frac{1}{3}\left(2\cdot R_{k-1,1}+2\cdot h_{k-1}\sum_{i=1}^{2^{k-2}}f(a+(2i-1)h_{k})-R_{k-1,1}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{3}\left(R_{k-1,1}+2\cdot h_{k-1}\sum_{i=1}^{2^{k-2}}f(a+(2i-1)h_{k})\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula 
+\[
+R_{k,1}=\frac{h_{k}}{2}\left[f(a)+f(b)+2\left(\sum_{i=1}^{2^{k-1}-1}f(a+ih_{k})\right)\right]\text{,}
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+h_{k}=\frac{h_{k-1}}{2}\text{,}
+\]
+
+\end_inset
+
+then our equation is transformed as:
+\begin_inset Formula 
+\[
+R_{k,2}=\frac{1}{3}\left(\frac{h_{k-1}}{2}(f(a)+f(b))+h_{k-1}\sum_{i=1}^{2^{k-2}-1}f(a+ih_{k-1})+2\cdot h_{k-1}\sum_{i=1}^{2^{k-2}}f(a+(2i-1)h_{k})\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{3}\left(h_{k}(f(a)+f(b))+2\cdot h_{k}\sum_{i=1}^{2^{k-1}/2-1}f(a+2i\cdot h_{k})+4\cdot h_{k}\sum_{i=1}^{2^{k-1}/2}f(a+(2i-1)h_{k})\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{h_{k}}{3}\left(f(a)+f(b)+2\sum_{i=1}^{2^{k-1}/2-1}f(a+2ih_{k})+4\sum_{i=1}^{2^{k-1}/2}f(a+(2i-1)h_{k})\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which is the same as Composite Simpson's Rule, for 
+\begin_inset Formula $n=2^{k-1}$
+\end_inset
+
+, and 
+\begin_inset Formula $h=h_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
 Question 4 (Sect4.7 - Q1a)
 \end_layout
 
