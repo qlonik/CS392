@@ -1,0 +1,849 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{systeme}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+CS 392 A9 Nikita Volodin 127196
+\end_layout
+
+\begin_layout Subsection*
+Question 1 (Sect5.1 - Q4)
+\end_layout
+
+\begin_layout Subsubsection*
+Part B
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(t,y)=\frac{1+y}{1+t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Does 
+\begin_inset Formula $f$
+\end_inset
+
+ satisfy a Lipschitz condition on 
+\begin_inset Formula $D=\{(t,y)\mid0\le t\le1,-\infty<y<\infty\}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\le t\le1\Rightarrow1\le t+1\le2\Rightarrow\frac{1}{2}\le\frac{1}{t+1}\le1\text{,}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|f(t,y_{1})-f(t,y_{2})|=\left|\frac{1+y_{1}-1-y_{2}}{1+t}\right|\le|y_{1}-y_{2}|\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $L=1>0$
+\end_inset
+
+ exists, this function 
+\begin_inset Formula $f$
+\end_inset
+
+ satisfies Lipschitz condition.
+\end_layout
+
+\begin_layout Itemize
+Can Theorem 5.6 be used to show that the initial-value problem 
+\begin_inset Formula $y'=f(t,y)$
+\end_inset
+
+, 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, 
+\begin_inset Formula $y(0)=1$
+\end_inset
+
+, is well-posed?
+\end_layout
+
+\begin_layout Standard
+The theorem 5.6 could be used in this case, because it satisfies all the
+ conditions of the theorem, so it is a well-posed problem.
+\end_layout
+
+\begin_layout Subsubsection*
+Part C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(t,y)=1-y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Does 
+\begin_inset Formula $f$
+\end_inset
+
+ satisfy a Lipschitz condition on 
+\begin_inset Formula $D=\{(t,y)\mid0\le t\le1,-\infty<y<\infty\}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|f(t,y_{1})-f(t,y_{2})|=|1-y_{1}-1+y_{2}|=|y_{1}-y_{2}|\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $L=1>0$
+\end_inset
+
+ exists, this function 
+\begin_inset Formula $f$
+\end_inset
+
+ satisfies Lipschitz condition.
+\end_layout
+
+\begin_layout Itemize
+Can Theorem 5.6 be used to show that the initial-value problem 
+\begin_inset Formula $y'=f(t,y)$
+\end_inset
+
+, 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, 
+\begin_inset Formula $y(0)=1$
+\end_inset
+
+, is well-posed?
+\end_layout
+
+\begin_layout Standard
+The theorem 5.6 could be used in this case, because it satisfies all the
+ conditions of the theorem, so it is a well-posed problem.
+\end_layout
+
+\begin_layout Subsection*
+Question 2 (Sect5.2 - Q9)
+\end_layout
+
+\begin_layout Standard
+Given the initial-value problem 
+\begin_inset Formula 
+\[
+y'=\frac{2}{t}y+t^{2}e^{t}\text{,}\quad1\le t\le2\text{,}\quad y(1)=0\text{,}
+\]
+
+\end_inset
+
+with exact solution 
+\begin_inset Formula $y(t)=t^{2}(e^{t}-e)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Part A
+\end_layout
+
+\begin_layout Standard
+Use Euler's method with 
+\begin_inset Formula $h=0.1$
+\end_inset
+
+ to approximate the solution, and compare it with the actual values of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.2-Q9.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.2-Q9_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Part B
+\end_layout
+
+\begin_layout Standard
+Use linear interpolation to approximate and compare to actual values
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y(1.04)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The linear Lagrange interpolation polynomial is given as 
+\begin_inset Formula 
+\[
+P(x)=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac{x-x_{0}}{x_{1}-x_{0}}f(x_{1})\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, for 
+\begin_inset Formula $f(1)=0$
+\end_inset
+
+, and 
+\begin_inset Formula $f(1.1)\approx0.271828182845905$
+\end_inset
+
+, we get the value of 
+\begin_inset Formula $P(1.04)$
+\end_inset
+
+ as:
+\begin_inset Formula 
+\[
+P(1.04)=\frac{1.04-1.1}{1-1.1}\cdot0+\frac{1.04-1}{1.1-1}\cdot0.271828182845905\approx0.108731273138362\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the actual value is given as:
+\begin_inset Formula 
+\[
+f(1.04)\approx0.119987497061344
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y(1.55)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The linear Lagrange interpolation polynomial is given as
+\begin_inset Formula 
+\[
+P(x)=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac{x-x_{0}}{x_{1}-x_{0}}f(x_{1})\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, for 
+\begin_inset Formula $f(1.5)\approx3.18744512245892$
+\end_inset
+
+, and 
+\begin_inset Formula $f(1.6)\approx4.62081784627951$
+\end_inset
+
+, we get the value of 
+\begin_inset Formula $P(1.55)$
+\end_inset
+
+ as:
+\begin_inset Formula 
+\[
+P(1.55)=\frac{1.55-1.6}{1.5-1.6}\cdot3.18744512245892+\frac{1.55-1.5}{1.6-1.5}\cdot4.62081784627951\approx3.90413148436922\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the actual value is given as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(1.55)\approx4.78863502080140
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y(1.97)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The linear Lagrange interpolation polynomial is given as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(x)=\frac{x-x_{1}}{x_{0}-x_{1}}f(x_{0})+\frac{x-x_{0}}{x_{1}-x_{0}}f(x_{1})\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, for 
+\begin_inset Formula $f(1.9)\approx11.7479965439625$
+\end_inset
+
+, and 
+\begin_inset Formula $f(2.0)\approx15.3982356527792$
+\end_inset
+
+, we get the value of 
+\begin_inset Formula $P(1.97)$
+\end_inset
+
+ as:
+\begin_inset Formula 
+\[
+P(1.97)=\frac{1.97-2.0}{1.9-2.0}\cdot11.7479965439625+\frac{1.97-1.9}{2.0-1.9}\cdot15.3982356527792\approx14.3031639201342\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the actual value is given as:
+\begin_inset Formula 
+\[
+f(1.97)\approx17.2792984355577
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 3 (Sect5.2 - Q11a)
+\end_layout
+
+\begin_layout Standard
+Given the initial-value problem 
+\begin_inset Formula 
+\[
+y'=-y+t+1\text{,}\quad0\le t\le5\text{,}\quad y(0)=1\text{,}
+\]
+
+\end_inset
+
+with exact solution 
+\begin_inset Formula $y(t)=e^{-t}+t$
+\end_inset
+
+.
+ Approximate 
+\begin_inset Formula $y(5)$
+\end_inset
+
+ using Euler's method with 
+\begin_inset Formula $h=0.2$
+\end_inset
+
+, 
+\begin_inset Formula $h=0.1$
+\end_inset
+
+, and 
+\begin_inset Formula $h=0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.2-Q11a.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.2-Q11a_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 4 (Sect5.3 - Q6d)
+\end_layout
+
+\begin_layout Standard
+Use Taylor's method of order two to approximate the solution of the initial-valu
+e problem.
+\begin_inset Formula 
+\[
+y'=-ty+4t/y\text{,}\quad0\le t\le1\text{,}\quad y(0)=1\text{, with }h=0.1\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.3-Q6d.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.3-Q6d_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 5 (Sect5.3 - Q8d)
+\end_layout
+
+\begin_layout Standard
+Use Taylor's method of order four to approximate the solution of the initial-val
+ue problem.
+\begin_inset Formula 
+\[
+y'=-ty+4t/y\text{,}\quad0\le t\le1\text{,}\quad y(0)=1\text{, with }h=0.1\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source code:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.3-Q8d.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "S5.3-Q8d_output.txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Euler's Method source code
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/EulersMethod.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Taylor's Method source code
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "/home/qlonik/dropbox/school/UPEI/08 semester/CS392/assignments/TaylorsMethod.m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
